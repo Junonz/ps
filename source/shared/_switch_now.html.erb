@@ -1,0 +1,10 @@
+<form id="promo-form" accept-charset="UTF-8" action="https://secure.powershop.co.nz/signup/personal_details" method="post">
+    <p>
+        <input id="promotion_id" name="promotion_id" type="hidden" value="<%= current_page.data.promotionID %>" />
+        <input type="checkbox" name="accept_ts_and_cs" id="accept_ts_and_cs" /> I accept the <a href="<% if current_page.data.openTermsAndConditionsInNewPage == 'yes' %> <%= current_page.url %>terms-and-conditions.html <% else %>#<% end %>" data-reveal-id="overlay_terms_and_conditions">Terms and Conditions</a> of this promotion
+    </p>
+    <div id="must_accept_ts_and_cs" style="display: none;">
+        <p class="pink-type">You must accept the terms and conditions to sign up under this promotion</p>
+    </div>
+    <a id="sign_up_now" class="button">Switch now</a>
+</form>

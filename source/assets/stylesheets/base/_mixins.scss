@@ -1,0 +1,15 @@
+@mixin acrossResolution($property, $smallScreen, $mediumScreen: $smallScreen, $largeScreen: $mediumScreen ) {
+
+  // Diplay CSS properties across media sizes using Foudation variables
+  // Small resolution first
+
+  @media #{$small-up} {
+    #{$property}: $smallScreen;
+  }
+  @media #{$medium-up} {
+    #{$property}: $mediumScreen;
+  }
+  @media #{$large-up} {
+    #{$property}: $largeScreen;
+  }
+}

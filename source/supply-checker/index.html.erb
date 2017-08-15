@@ -1,0 +1,108 @@
+---
+title: "Supply Checker - Powershop, a better power company"
+section: "residential"
+---
+
+<section class="magenta white-type">
+    <div class="row padding">
+        <div class="small-12 medium-8 medium-offset-2 columns text-center">
+            <h1>Supply Checker</h1>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="row padding">
+        <div class="small-12 medium-8 medium-offset-2 columns">
+            <a name="supply_check_top"></a>
+            <!-- BEGIN: enter details -->
+            <div id="enter_details" class="st-wid-10">
+                <!-- FORM -->
+                <form action="#" id="supply_check_form" class="st-wid-10 styled-form inline-form">
+                    <p>Fill out your details and we&rsquo;ll confirm if we supply power to your area.</p>
+                    <fieldset class="st-wid-10 cm-wid-10 ph-wid-12">
+                        <!-- Errors -->
+                        <div id="supply_check_errors" class="pink-type" style="margin-bottom: 15px">
+                            <div style="display: none"></div>
+                        </div>
+                        <label for="supply_check_address_region">Select your region *</label>
+                        <select id="supply_check_address_region" name="address[region]" class="fixedWidth">
+                            <option value="" selected="selected">Select a Region</option>
+                        </select>
+                        <br />
+                        <label for="supply_check_address_district">Select your district *</label>
+                        <select id="supply_check_address_district" name="address[district]" class="fixedWidth">
+                            <option value="" selected="selected">Select a District</option>
+                        </select>
+                        <br />
+                        <label for="supply_check_address_suburb">Select your suburb *</label>
+                        <select id="supply_check_address_suburb" name="address[suburb]" class="fixedWidth">
+                            <option value="" selected="selected">Select a Suburb</option>
+                        </select>
+                        <br />
+                        <!--
+                        <p>And, if you have a copy of a recent bill, enter your ICP number and we&rsquo;ll confirm if we can supply your property.</p>
+                        <label for="supply_check_icp_number">ICP number</label>
+                        <input type="text" id="supply_check_icp_number" name="icp_number" />
+                        -->
+                        <div class="st-wid-6 st-pos-4 cm-wid-5 cm-pos-5 ph-wid-12 ph-pos-0 clear continue">
+                            <p><a href="javascript:supplyChecker.submit(); void(0)" class="button switch">Continue</a></p>
+                        </div>
+                    </fieldset>
+                </form>
+                <!-- end FORM -->
+            </div>
+            <!-- END enter details -->
+            <div id="supply_check_responses">
+                <div id="waiting_for_icp_details" class="CheckingInProgress1" style="display: none;">
+                    <div class="CheckingInProgress2">
+                        <p><img src="/assets/images/supply-checker/ajax-loader.gif" class="no-scale" height="64" width="64" alt="loading" /></p>
+                        <p>We&rsquo;re checking things. This should take about 45 seconds or less...</p>
+                        <p>Please don't close this window unless you want to cancel the checking process.</p>
+                    </div>
+                </div>
+                <!-- YES: Powershop in your region -->
+                <div id="no_icp" class="SupplyCheckForm2" style="display: none;">
+                    <h2>Yes!</h2>
+                    <p>We supply customers in your region.</p>
+                    <p><a title="Switch now - Powershop" href="/switch-now/" class="button switch">Switch now</a></p>
+                    <p><a href="javascript:supplyChecker.showForm(); void(0)">Or, check another address.</a></p>
+                </div>
+                <!-- YES: We can supply your home -->
+                <div id="accepted" class="SupplyCheckForm2" style="display: none;">
+                    <h2>Yes!</h2>
+                    <p>We can supply your property right now.</p>
+                    <p><a title="Switch now - Powershop" href="/switch-now/" class="button switch">Switch now</a>.</p>
+                    <p><a href="javascript:supplyChecker.showForm(); void(0)">Or, check another address.</a></p>
+                </div>
+                <!-- No: Can't suport your meter set up -->
+                <div id="unsupported_meter_setup" class="SupplyCheckForm2" style="display: none;">
+                    <h2>Sorry!</h2>
+                    <p>We are unable to supply properties with your meter setup.</p>
+                    <p>If you want to understand more about this <a href="/contact-us/">just let us know and we'll get in touch</a>.</p>
+                    <p><a href="javascript:supplyChecker.showForm(); void(0)">Check another address.</a></p>
+                </div>
+                <!-- No: Can't suport prepay meters -->
+                <div id="pre_pay_meter" class="SupplyCheckForm2" style="display: none;">
+                    <h2>Sorry!</h2>
+                    <p>Your property appears to have a prepay meter. We're unable to supply to this type of meter.</p>
+                    <p>However, we can replace your meter with one that we can supply to <a href="/contact-us/">contact us to find out more</a>.</p>
+                    <p><a href="javascript:supplyChecker.showForm(); void(0)">Check another address.</a></p>
+                </div>
+                <!-- No: No response -->
+                <div id="no_response" class="SupplyCheckForm2" style="display: none;">
+                    <h2>Sorry!</h2>
+                    <p>We experiencing some technical difficulties right now. Please check back later.</p>
+                </div>
+                <!-- No: Powershoop not in your area -->
+                <div id="not_accepted" class="SupplyCheckForm2" style="display: none;">
+                    <h2>Sorry!</h2>
+                    <p>We are not able to supply properties in your area yet.</p>
+                    <p><a href="/keep-me-posted/">Email me when Powershop is in my area.</a></p>
+                    <p><a href="javascript:supplyChecker.showForm(); void(0)">Check another address.</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<%= javascript_include_tag  "../integration/areas.js", "modules/supply_checker.js" %>

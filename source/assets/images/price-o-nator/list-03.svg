@@ -1,0 +1,22 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     viewBox="0 0 80 55" enable-background="new 0 0 80 55" xml:space="preserve" preserveAspectRatio="xMinYMin meet">
+        <path fill="#FA0E6A" d="M75.1,3H4.9C3.2,3,1.8,4.3,1.8,6V49c0,1.7,1.4,3.1,3.1,3.1h70.1c1.7,0,3.1-1.4,3.1-3.1V6
+            C78.2,4.3,76.8,3,75.1,3z"/>
+        <circle fill="#FFFFFF" cx="64.7" cy="38.4" r="6.9"/>
+        <circle fill="none" stroke="#FA0E6A" stroke-miterlimit="10" cx="64.7" cy="38.4" r="4.1"/>
+            <line fill="none" stroke="#FA0E6A" stroke-linecap="round" stroke-miterlimit="10" x1="64.7" y1="38.4" x2="64.7" y2="34.3"/>
+        <circle fill="#FFFFFF" cx="64.7" cy="16.2" r="6.9"/>
+        <circle fill="none" stroke="#FA0E6A" stroke-miterlimit="10" cx="64.7" cy="16.2" r="4.1"/>
+            <line fill="none" stroke="#FA0E6A" stroke-linecap="round" stroke-miterlimit="10" x1="64.7" y1="16.2" x2="64.7" y2="12.1"/>
+            <line fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-miterlimit="10" x1="58.3" y1="27.1" x2="71.1" y2="27.1"/>
+        <path  fill="#FFFFFF" d="M49.7,9.4H9.5C8.7,9.4,8,10,8,10.9v32.4c0,0.8,0.7,1.5,1.5,1.5h40.1
+            c0.8,0,1.5-0.7,1.5-1.5V10.9C51.2,10,50.5,9.4,49.7,9.4z"/>
+        <g>
+            <path fill="#FA0E6A" d="M23.8,30.5c0.5,2,2.2,2.9,4.5,2.9c2,0,3.2-0.8,3.2-2.1c0-1.3-0.8-1.9-2.4-1.9h-0.6
+                c-2.1,0-2.9-0.7-2.9-2.1V27c0-1.4,1-2.1,2.9-2.1h1.1c1.1,0,1.8-0.6,1.8-1.6c0-1.2-1.2-1.9-3.1-1.9c-2.7,0-3.7,1.5-4.1,2.8
+                c0,0.3-3.7,0.4-3.7-2.9c0-2.7,3-4.7,7.9-4.7c5.8,0,8.9,2,8.9,5.8c0,2-1.3,3.5-3.8,4.2c2.7,0.9,4.1,2.7,4.1,5.2
+                c0,4.1-3.3,6.4-9.2,6.4c-5.2,0-8.3-2.2-8.3-4.8C20,30.2,23.8,30.3,23.8,30.5z"/>
+        </g>
+        <line fill="none" stroke="#FA0E6A" stroke-miterlimit="10" x1="39.8" y1="27.1" x2="52.9" y2="27.1"/>
+        <line fill="none" stroke="#FA0E6A" stroke-miterlimit="10" x1="7.2" y1="27.1" x2="19.3" y2="27.1"/>
+</svg>

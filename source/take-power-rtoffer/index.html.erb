@@ -1,0 +1,100 @@
+---
+title: "Credit - Powershop, a better power company"
+section: "residential"
+promotionID: "668"
+promotionName: "You can't really lose (668)"
+customClass: "promo-aoa"
+openTermsAndConditionsInNewPage: "yes"
+---
+
+<section class="header white-type text-center hot">
+  <h2 class="margin-zero">You really can't lose with powershop</h2>
+</section>
+
+<div class="light-grey">
+  <div class="row">
+    <div class="small-12 small-centered medium-11 columns end white offset-container">
+
+      <section class="padding">
+        <div class="row text-center">
+          <div class="small-11 small-centered medium-10 columns end">
+            <h2 class="pink-type">Switch to a better power deal</h2>
+            <div class="free-power-and-sg">
+              <div class="free-power"><%= partial "assets/images/promos/aoa/150-credit.svg" %></div>
+              <div class="plus-icon"><%= partial "assets/images/promos/aoa/plus.svg" %></div>
+              <div class="sg-badge"><%= partial "assets/images/promos/aoa/sg-badge.svg" %></div>
+            </div>
+            <p>When you switch your main home to Powershop we’ll give you $150 free power, spread over your first three months. We also guarantee to save you money in your first year compared to your old power company.</p>
+
+            <div class="vimeo">
+              <div class='embed-container'>
+                <h3>See how Guaranteed Savings work</h3>
+                <img alt="" title="" class="play-btn" src="/assets/images/homes/play.min.svg" />
+                <div class="time">1:17</div>
+                <iframe sandbox="allow-same-origin allow-scripts" id="intro-video" src='https://player.vimeo.com/video/151571681?title=0&amp;byline=0&amp;portrait=0' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="padding">
+        <div class="row text-center">
+          <div class="small-11 small-centered medium-10 columns end padding-bottom-las">
+            <h3>How we guarantee your savings</h3>
+            <ol class="ordered-list">
+              <li>Switch to Powershop.</li>
+              <li>Send a copy of your old bill to <span class="pink-type">savings@powershop.co.nz</span></li>
+              <li>We’ll keep track of what you’re paying us vs what you would have paid your old power company.</li>
+              <li>Every three months or so we’ll be in touch to let you know how your savings are going. If you’re not saving we’ll fix you up as we go.</li>
+              <li>After 12 months we’ll do a full review to make sure that you’ve saved what we promised - if, for whatever reason, you haven’t then we’ll put a final credit on your account to ensure you do.</li>
+            </ol>
+            <p>Our prices are already hard to beat, and with Guaranteed Savings you genuinely can’t lose!</p>
+            <hr/>
+            <p>To get your Guaranteed Savings, you’ll need to send us a recent bill from your old power company. We’ll ask you for this later.</p>
+            <%= partial "shared/mm_mobile_call_us" %>
+            <%= partial "shared/switch_now" %>
+            <%= partial "terms-and-conditions" %>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+</div>
+
+<section class="light-grey">
+  <div class="row padding-bottom-last">
+  <div class="small-12 small-centered medium-12 columns end">
+    <div class="padding">
+      <%= partial "shared/got_questions" %>
+      <%= partial "shared/well_get_in_touch" %>
+      <%= partial "shared/live_help_now" %>
+    </div>
+  </div>
+  </div>
+</section>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    var cookie = readCookie("questionsOpen");
+    if (cookie === "yes") {
+      $('#got-questions').show();
+    }
+    // Define Vimeo player
+    var iframe = $('#intro-video')[0];
+    var player = $f(iframe);
+    $('.vimeo .embed-container').click(function(event) {
+      $(".embed-container").addClass("fade-background");
+      $('.vimeo h3').fadeOut();
+      $('.vimeo .play-btn').fadeOut();
+      $('.vimeo .time').fadeOut();
+      player.api('play');
+    });
+    $('#got-questions-link').click(function(){
+      createCookie("questionsOpen", "yes", 1);
+    })
+  });
+</script>
+<script src="/assets/javascripts/third-party/froogaloop.js" type="text/javascript"></script>

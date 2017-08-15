@@ -1,0 +1,1 @@
+function resize_video(){var i=window.innerHeight,e=$(".navigation").height()+$(".deals").height(),n=$(".intro-video .row").innerHeight()-$(".intro-video .row").height(),t=$(".btn-next-mask").height(),o=(2*$(".btn-next svg").height(),$(".intro-video .row").innerHeight()+t),h=16*(i-e-n-t);h/=9,i>=720&&o>=i-e&&$(".intro-video .row").css("width",h)}

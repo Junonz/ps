@@ -1,0 +1,125 @@
+.home-links {
+  .row {
+    @media #{$small-only} {
+      padding: 0;
+    }
+  }
+  .columns {
+    padding-top: $paragraph-margin-bottom*0.8;
+    @media #{$small-only} {
+      margin-bottom: 20px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      &:nth-child(1) {
+        margin-bottom: 0;
+      }
+      &:nth-child(2) {
+        margin-bottom: 0;
+        paddding: 0;
+        .wrapper {
+          width: 100%;
+          border-top: 1px solid $mid-grey;
+          border-bottom: 1px solid $mid-grey;
+          padding-bottom: 1.4rem;
+          padding-top: 1.4rem;
+        }
+      }
+    }
+    .svg {
+      display: table-cell;
+      width: 60px;
+      vertical-align: top;
+      svg {
+        display: block;
+        width: 36px;
+        height: 34px;
+        margin: 0 auto;
+        fill: $pink;
+      }
+    }
+    p {
+      width: calc( 100% - 60px);
+      margin-bottom: 0;
+      display: table-cell;
+      vertical-align: middle;
+    }
+    .wrapper {
+      display: table;
+    }
+  }
+  .btn-next {
+    .arrow {
+      fill: $mid-grey;
+    }
+    .half-circle {
+      fill: $light-grey;
+    }
+  }
+}
+// .home-links {
+//   position: relative;
+//   z-index: 100;
+//   .columns {
+//     position: relative;
+//     padding-top: $paragraph-margin-bottom*0.8;
+//     padding-bottom: 0;
+//   }
+//   .wrapper {
+//     display: table;
+//     width: 100%;
+//     table-layout: fixed;
+//     .svg, p {
+//       display: table-cell;
+//       vertical-align: top;
+//       @media #{$small-only} {
+//         vertical-align: middle;
+//       }
+//     }
+//   }
+//   .svg {
+//     width: 43px;
+//     height: 50px;
+//     overflow: hidden;
+//     svg {
+//       margin-top: 2px;
+//       display: block;
+//       width: inherit;
+//       height: inherit;
+//     }
+//   }
+//   p {
+//     margin: 0;
+//     padding: 0 0 0 15px;
+//     box-sizing: border-box;
+//   }
+//   & div:nth-child(2) {
+//     .wrapper {
+//       border-right: 1px solid $mid-grey;
+//       border-left: 1px solid $mid-grey;
+//     }
+//     @media #{$small-only} {
+//       padding: 0;
+//       .wrapper {
+//         padding-top: $paragraph-margin-bottom;
+//         padding-bottom: $paragraph-margin-bottom;
+//         border: 0;
+//         border-bottom: 1px solid $mid-grey;
+//         border-top: 1px solid $mid-grey;
+//       }
+//     }
+//   }
+//   & div:last-child {
+//     @media #{$small-only} {
+//       padding-bottom: 0;
+//     }
+//   }
+//   .btn-next {
+//     .arrow {
+//       fill: $mid-grey;
+//     }
+//     .half-circle {
+//       fill: $light-grey;
+//     }
+//   }
+// }

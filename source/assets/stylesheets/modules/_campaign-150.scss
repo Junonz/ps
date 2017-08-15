@@ -1,0 +1,109 @@
+.campaign-150 {
+  background-color: #5abbe4;
+  min-height: 420px;
+  height: 420px;
+  position: relative;
+  .beard-guy {
+    display: none;
+    width: 100%;
+    height: inherit;
+    background: url(/assets/images/campaigns/campaign-150/beard-guy.png) no-repeat;
+    background-size: auto 390px;
+    @media (min-width: 785px) {
+      display: block;
+      background-position: calc(50% - 136px) bottom;
+    }
+    @media (min-width: 820px) {
+      background-position: calc(50% - 120px) bottom;
+    }
+  }
+  h2 {
+    width: 100%;
+    height: 90px;
+    background: url(/assets/images/campaigns/campaign-150/save-power-mobile.png) center center no-repeat;
+    background-size: auto 100%;
+    position: absolute;
+    top: 5px;
+    bottom: auto;
+    left: 0;
+    right: 0;
+    margin: auto;
+    overflow: hidden;
+    text-indent: -9000px;
+    @media (min-width: 785px) {
+      width: 195px;
+      height: 242px;
+      top: 20px;
+      background: url(/assets/images/campaigns/campaign-150/save-on-power.png) center center no-repeat;
+      background-size: 100% auto;
+      left: 20px;
+      right: auto;
+    }
+    @media (min-width: 900px) {
+      left: 40px;
+      right: auto;
+    }
+    @media #{$large-up} {
+      right: 690px;
+      left: 0;
+    }
+  }
+  .free-power {
+    width: 265px;
+    height: 305px;
+    background: $white;
+    position: absolute;
+    top: auto;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #fff url(/assets/images/campaigns/campaign-150/150-power-free.png) center 0 no-repeat;
+    background-size: 100% auto;
+    @media (min-width: 785px) {
+      width: 300px;
+      height: 360px;
+      top: 0;
+      bottom: 0;
+      right: 20px;
+      left: auto;
+      background-position: center 10px;
+    }
+    @media #{$large-up} {
+      right: 0;
+      left: 620px;
+    }
+    p {
+      display: none;
+    }
+    .switch-now {
+      width: 65%;
+      display: block;
+      position: absolute;
+      bottom: 10px;
+      right: 0;
+      left: 0;
+      margin: auto;
+      text-transform: uppercase;
+      padding: 16px 34px 16px 16px;
+      color: $white;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 1em;
+      @media (min-width: 785px) {
+        bottom: 20px;
+      }
+      &:hover {
+        text-decoration: none;
+      }
+      .arrow {
+        display: block;
+        width: 20px;
+        height: 36px;
+        position: absolute;
+        top: 7px;
+        right: 9px;
+      }
+    }
+  }
+}

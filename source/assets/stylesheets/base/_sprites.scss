@@ -1,0 +1,8 @@
+// Sprites
+
+$sprites-sprite-dimensions: true;
+$sprites-layout: smart;
+$sprites-spacing: 20px;
+@import "../compass/utilities/sprites";
+@import "sprites/*.png";
+//@include all-sprites-sprites;

@@ -1,0 +1,32 @@
+.price-change-alert {
+  $the-size: 24px;
+  .columns {
+    margin-bottom: 40px;
+    padding: 12px 0 8px 0;
+  }
+  p {
+    margin: 0;
+    font-size: 16px;
+    display: inline-block;
+    line-height: $the-size;
+    vertical-align: top;
+    padding-left: 10px;
+  }
+  .alert-icon {
+    display: inline-block;
+    width: $the-size;
+    height: $the-size;
+    fill: $white;
+  }
+}
+.magenta {
+  .price-change-alert .columns {
+    @include background-image(linear-gradient(top, #a0175f 0%,#a0175f 50%,#96155a 50%));
+  }
+}
+.very-light-grey {
+  .price-change-alert .columns {
+    @include background-image(linear-gradient(top, #c3c3c3 0%,#c3c3c3 50%,#b9b9b9 50%));
+    color: $white;
+  }
+}

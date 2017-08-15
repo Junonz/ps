@@ -1,0 +1,23 @@
+.intro-video {
+    h2 {
+        font-size: 3rem;
+        margin-bottom: 0.8em;
+        text-transform: capitalize;
+    }
+    .play-container {
+        @include acrossResolution(top , 0, 35%, 35%);
+        h2 {
+            margin-bottom: 0;
+        }
+        img {
+            @media #{$small-only} {
+                top: 28%;
+            }
+        }
+        .time {
+            @media #{$small-only} {
+                top: 45%;
+            }
+        }
+    }
+}

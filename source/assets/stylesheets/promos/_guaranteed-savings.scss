@@ -1,0 +1,67 @@
+.guaranteed-savings {
+  .how-to-list {
+    display: table;
+    @include acrossResolution(width, 100%, 100%, 80%);
+    margin: 0 auto;
+    table-layout: fixed;
+    vertical-align: middle;
+    li {
+      position: relative;
+      font-size: 1.3rem;
+      line-height: 1.3em;
+      list-style: none;
+      text-align: left;
+      display: table-row;
+      vertical-align: middle;
+      & > div {
+        display: table-cell;
+        vertical-align: middle;
+        padding: 10px 0;
+        border-collapse: collapse;
+      }
+      .svg {
+        width: 10%;
+        svg {
+          width: 100%;
+          @include acrossResolution(height, 60px, 60px, 70px);
+          display: block;
+        }
+        @media #{$medium-only} {
+          width: 15%;
+        }
+      }
+      .copy {
+        width: 90%;
+        padding-left: 25px;
+        @media #{$medium-only} {
+          width: 85%;
+        }
+      }
+      @media #{$small-only} {
+        display: block;
+        margin-bottom: 40px;
+        .svg {
+          display: block;
+          width: 30%;
+          margin: 0 auto 10px auto;
+        }
+        .copy {
+          display: block;
+          width: 100%;
+          padding: 0;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .compare-machine {
+    width: 65%;
+    position: relative;
+    margin: 25px auto;
+    display: block;
+    @media #{$small-only} {
+      width: 100%;
+    }
+  }
+}

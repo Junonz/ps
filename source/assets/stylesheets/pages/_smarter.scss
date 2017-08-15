@@ -1,0 +1,84 @@
+.smarter {
+	.hero-background {
+		background: transparent url(/assets/images/smarter/wall-bg.jpg) center 0 repeat-x;
+		position: relative;
+		.display-table {
+			display: table;
+			box-sizing: border-box;
+		}
+		h2 {
+			margin-bottom: 0;
+			vertical-align: middle;
+			display: table-cell;
+			height: 288px;
+		}
+		.meter {
+			height: 288px;
+			overflow: hidden;
+			img {
+				min-width: 205px;
+			}
+		}
+	}
+	.call-to-action {
+		color:$pink;
+		border:solid 2px $pink;
+		border-radius: 6px;
+		padding:4px 10px 10px;
+		font-weight:600;
+		display: inline-block;
+		margin-top: 1em;
+		&:hover {
+			text-decoration: none;
+			background:$pink;
+			border:solid 2px $pink;
+			color:$white;
+		}
+	}
+	.phone-usage {
+		padding-top:2em;
+		padding-bottom:2em;
+	}
+	.mobile-usage {
+		text-align:center;
+	}
+	.download, .download-android {
+		padding-left: 0.625rem;
+  	padding-right: 0.625rem;
+  	padding-bottom: 1.25rem;
+	}
+	.laptop-heatmap, .laptop-usage {
+		min-height: 310px;
+		.img {
+			width: 100%;
+			height: 100%;
+			background: url(/assets/images/smarter/laptop-heatmap.png) center center no-repeat;
+			background-size: auto 100%;
+			min-height: 250px;
+		}
+		@media (min-width: 642px) and (max-width: 1280px)  {
+			padding-right: 40px;
+			padding-left: 0 !important;
+			.img {
+				background-position: right center;
+			}
+		}
+		@media (max-width: 641px)  {
+			.img {
+				background-size: contain;
+			}
+		}
+	}
+	.laptop-usage {
+		.img {
+			background-image: url(/assets/images/smarter/laptop-usage.png) ;
+		}
+		@media (min-width: 642px) and (max-width: 1280px)  {
+			padding-left: 40px;
+			padding-right: 0 !important;
+			.img {
+				background-position: left center;
+			}
+		}
+	}
+}

@@ -1,0 +1,23 @@
+.questions-answered {
+  .separation {
+    border-bottom: 1px solid $very-light-grey;
+    margin-bottom: 1em;
+  }
+
+  .light-grey & .separation {
+    border-color: $mid-grey;
+  }
+
+  h2 {
+    margin: 0.5em 0;
+  }
+
+  h2.more {
+    margin: 0;
+  }
+
+  p.more {
+    margin: 0.5em 0 1em;
+  }
+
+}

@@ -1,0 +1,142 @@
+$trump-height: 130px;
+
+.power-you-can-love {
+  height: $trump-height;
+  overflow: hidden;
+  background-color: #dee4eb;
+  @include acrossResolution("height", auto, auto, $trump-height);
+  @include acrossResolution("min-height", $trump-height, $trump-height, 0 );
+  .columns, .row {
+    position: relative;
+    height: inherit;
+  }
+  a {
+    height: inherit;
+    display: block;
+    &:hover {
+      text-decoration: none;
+      border: 0;
+    }
+  }
+  h2.power-you-can-love-title {
+    display: block;
+    overflow: hidden;
+    text-indent: -90000px;
+    position: relative;
+    top: 10px;
+    margin: 0 auto 10px auto;
+    @include acrossResolution("width", 100%, 80%, 700px);
+    @include acrossResolution("max-width", 320px, 400px, none);
+    @include acrossResolution("height", 150px, 180px, 68px);
+    background: url(/assets/images/power-you-can-love/title-mobile.png) center center no-repeat;
+    background-size: 100% auto;
+    @media (min-width: 1026px) {
+      background: url(/assets/images/power-you-can-love/title.png) center center no-repeat;
+      background-size: 90% auto;
+    }
+  }
+  .close {
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    cursor: pointer;
+    display: none;
+    @media #{$medium-up} {
+      top: 25px;
+    }
+    svg {
+      display: block;
+      circle {
+        fill: $very-light-grey;
+        transition: fill 0.3s ease;
+      }
+      line {
+        stroke: $mid-grey;
+        stroke-width: 3px;
+      }
+      &:hover {
+        circle {
+          fill: $white;
+        }
+      }
+    }
+  }
+  .play {
+    width: 90px;
+    height: 30px;
+    display: inline-block;
+    position: relative;
+    top: 9px;
+    .background {
+      fill: #0e91cf;
+      stroke: #fff;
+      stroke-width: 1px;
+    }
+    .copy path, .arrow {
+      fill: #fff;
+    }
+  }
+  p {
+    min-height: 30px;
+    margin-bottom: 0;
+    display: inline-block;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  .baby, .power-great-again-badge {
+    display: none;
+    @media (min-width: 900px) {
+      min-width: 479px;
+      height: 100%;
+      left: -162px;
+      top: 0;
+      display: block;
+      position: absolute;
+      background: url(/assets/images/power-you-can-love/baby-trump.png) center bottom no-repeat;
+      background-size: auto 95%;
+    }
+  }
+  .power-great-again-badge {
+    left: auto;
+    right: 0;
+    background: url(/assets/images/power-you-can-love/power-great-again.png) center 10px no-repeat;
+    background-size: auto 80%;
+    @include acrossResolution("background-size", auto 60% , auto 60%, auto 80%);
+    @include acrossResolution("background-position", center 10px , center 20px, center 10px);
+    min-width: 200px;
+  }
+  .line-container {
+    margin-bottom: 20px;
+  }
+}
+.padding-top-trump {
+  padding-top: 0;
+}
+
+#overlay-video-trump iframe {
+  width: 100%;
+  height: 100%;
+}
+
+@media #{$large-up} {
+  body {
+    padding-top: 0;
+    transition: padding-top .65s ease;
+  }
+  .padding-top-trump {
+    padding-top: $trump-height;
+  }
+  .power-you-can-love {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    display: none;
+    &.open {
+      display: block;
+    }
+  }
+}

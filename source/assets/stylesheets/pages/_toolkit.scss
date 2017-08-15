@@ -1,0 +1,31 @@
+.toolkit {
+  .hero-background {
+    @media #{$medium-up} { 
+      display: block;
+      top: 0%;
+      background: transparent url(/assets/images/toolkit/coffee-with-ipad.jpg) center 0 no-repeat;
+      background-size: cover;
+      min-height:488px;
+
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: row; /* works with row or column */
+      flex-direction: row;
+      -webkit-align-items: center;
+      align-items: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+    } 
+  }
+  .download, .download-android {
+    a {
+      padding-bottom: $paragraph-margin-bottom;
+      display: block;
+      
+    }
+  }
+  .pink-button { 
+    color: $white;
+    background-color: $magenta;
+  }
+}

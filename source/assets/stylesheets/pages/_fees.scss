@@ -1,0 +1,17 @@
+.table-fee {
+  width: 100%;
+  tr {
+    border-bottom: 1px solid $light-grey;
+  }
+  td {
+    vertical-align: top;
+    padding: 1em 0.5em;
+  }
+  p {
+    margin-bottom: 0;
+  }
+  .price {
+    min-width: 110px;
+    text-align: right;
+  }
+}

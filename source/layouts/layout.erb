@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <script src="//cdn.optimizely.com/js/1857590230.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+    <% if current_page.data.homepage == 'true' %>
+        <meta name="robots" content="noodp,noydir" />
+    <% end %>
+
+    <title>
+        <%= current_page.data.title || "Powershop - a better power company" %>
+    </title>
+
+    <meta name="description" content="<%= current_page.data.title || "Powershop is the world's first online energy store and continues to create better, and cheaper, ways for you to buy electricity." %>">
+
+    <%= stylesheet_link_tag "all" %>
+    <%= javascript_include_tag  "all" %>
+
+    <!-- Typekit -->
+    <script>
+        (function(d) {
+            var tkTimeout=3000;
+            if(window.sessionStorage){if(sessionStorage.getItem('useTypekit')==='false'){tkTimeout=0;}}
+            var config = {
+            kitId: 'eqr8kvp',
+            scriptTimeout: tkTimeout
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+"wf-inactive";if(window.sessionStorage){sessionStorage.setItem("useTypekit","false")}},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+="wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+    </script>
+    <!-- END Typekit -->
+
+    <!-- GA -->
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        var pluginUrl =
+            '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+        _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+        _gaq.push(['_setAccount', 'UA-5962965-1']);
+        _gaq.push(['_setDomainName', 'powershop.co.nz']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+    <link href="https://plus.google.com/114216294067172057390" rel="publisher" />
+    <!-- END GA -->
+
+</head>
+
+<body class="<%= page_classes %> <%= current_page.data.customClass %>" data-grid-framework="f4" data-grid-gutterwidth="20px" data-promo-code="<%= current_page.data.promotionID %>">
+    <%= partial "shared/google_tag_manager" %>
+    <%= partial "shared/unsupported_browsers" %>
+    <%= partial "shared/navigation" %>
+    <%= yield %>
+    <%= partial "shared/footer" %>
+</body>
+
+</html>

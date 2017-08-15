@@ -1,0 +1,124 @@
+@import "compass/css3/border-radius";
+.our-customers {
+  .btn-next {
+    .arrow {
+      fill: $dark-grey;
+    }
+    .half-circle {
+      fill: $light-grey;
+    }
+  }
+  .testimonials {
+    h3 {
+      margin-bottom: 0;
+      a {
+        display: block;
+        padding: $paragraph-margin-bottom $paragraph-margin-bottom/1.5 ;
+        line-height: 1em;
+        font-size: rem-calc(28);
+      }
+    }
+    .testimonial {
+      margin-bottom: $paragraph-margin-bottom;
+      .container {
+        background-color: $light-grey;
+      }
+      img {
+        width: 100%;
+      }
+      a {
+        background-color: $light-grey;
+      }
+      p {
+        padding: $paragraph-margin-bottom $paragraph-margin-bottom*2;
+      }
+    }
+    .btn-next {
+      .half-circle {
+        fill: $very-light-grey;
+      }
+    }
+  }
+  .numbers {
+    position: relative;
+    .deals {
+      padding: $paragraph-margin-bottom/2 0;
+      a {
+        color: $blue;
+      }
+    }
+    .big-number {
+      text-align: center;
+      span {
+        display: none;
+      }
+      &:after {
+        display: block;
+        content: url('/assets/images/our-customers/675kwhs.min.svg');
+        width: 100%;
+        height: auto;
+      }
+    }
+    .number54 {
+      padding: $paragraph-margin-bottom 0;
+      span {
+        display: none;
+      }
+      &:after {
+        display: block;
+        content: url('/assets/images/our-customers/56.min.svg');
+        width: 100%;
+        height: auto;
+      }
+    }
+    .nz-map {
+      height: 60px;
+      width: auto;
+      padding: 5px;
+    }
+    .btn-next {
+      bottom: 0;
+      $experimental-support-for-svg: true;
+      @include background-image(linear-gradient(top, $light-grey 40%,$light-blue 40%));
+    }
+    .deals, .big-number, .number54, p.big {
+      position: relative;
+      z-index: 100;
+    }
+  }
+  .consumer {
+    overflow: auto;
+    .consumer-logo {
+      max-width: 260px;
+      margin-bottom: $paragraph-margin-bottom*2;
+    }
+    .big {
+      font-size: rem-calc(26);
+    }
+    ul, li {
+      list-style: none;
+      li {
+        margin-bottom: $paragraph-margin-bottom*2;
+      }
+    }
+    .satisfation-numbers {
+      margin-bottom: $paragraph-margin-bottom;
+      .container {
+        background-color: $white;
+        @include border-radius(8px, 8px);
+        padding: $paragraph-margin-bottom/2;
+        h3 {
+          font-size: rem-calc(52);
+          @include acrossResolution(font-size, rem-calc(52), rem-calc(52), rem-calc(40));
+          margin: $paragraph-margin-bottom/2;
+        }
+        p {
+          margin-bottom: 0;
+        }
+      }
+      .columns {
+        @include acrossResolution(width, 50%, 33.333%, 14.284%)
+      }
+    }
+  }
+}

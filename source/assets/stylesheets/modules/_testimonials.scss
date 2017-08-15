@@ -1,0 +1,63 @@
+.testimonials {
+  li div {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .images > div {
+    float: left;
+    padding: 0;
+    text-align: center;
+    a {
+      display: inline-block;
+      position: relative;
+    }
+  }
+  .ring {
+    top: 0;
+    left: 0;
+    position: absolute;
+    // display: none;
+  }
+  .testimonial-1 .ring {
+    display: block;
+  }
+  .words {
+    @include acrossResolution(margin-bottom, 20px, 40px, 0);
+    & > div {
+      position: relative;
+      padding: 3px 0 0 35px;
+    }
+    h2 {
+      font-family: 'powershop_uiregular';
+      color: $pink;
+      margin: 0;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    blockquote {
+      padding: 0;
+      color: $jet;
+      border: 0;
+      font-size: $paragraph-font-size;
+      margin-bottom: $paragraph-margin-bottom/2;
+    }
+    h5 {
+      color: $pink;
+    }
+  }
+}
+.facts {
+  padding-top: $paragraph-margin-bottom/2;
+  .row {
+    @media #{$medium-up} {
+      margin-bottom: $paragraph-margin-bottom;
+    }
+  }
+  .columns {
+    @media #{$small-only} {
+      padding: 0 0 $paragraph-margin-bottom 0;
+    }
+  }
+}

@@ -1,0 +1,232 @@
+.navigation.row {
+  position: relative;
+  z-index: 150;
+  background-color: $white;
+  .column {
+    padding-top: $column-gutter;
+    padding-bottom: $column-gutter;
+  }
+  .logo {
+    width: 282px;
+    height: 46px;
+    margin: 0;
+    overflow: hidden;
+    display: block;
+    margin-right: $column-gutter;
+    a {
+      display: block;
+      text-indent: -9000px;
+      background: url(/assets/images/nav/powershop-logo.min.svg) 0 center no-repeat;
+      width: inherit;
+      height: inherit;
+    }
+  }
+  .menu-mobile {
+    display: none;
+  }
+  ul, li {
+    list-style: none;
+    list-style-position: outside;
+    margin: 0;
+    padding: 0;
+    a, span {
+      color: $body-font-color;
+      transition: border 0.2s, background-color 0.2s;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  .channels {
+    span {
+      float: left;
+      background-color: transparent;
+      margin-right: $column-gutter/2;
+    }
+  }
+  .page-links {}
+  .buttons {
+    a {
+      min-width: 110px;
+      display: block;
+      text-align: center;
+      color: $white;
+    }
+    .login a {
+      background-color: $pink;
+    }
+    .switch a {
+      background-color: $blue;
+    }
+  }
+  // Navigation bar style for MOBILE
+  @media #{$small-only}  {
+    padding: 0;
+    a, span {
+      padding: $column-gutter/1.5 $column-gutter;
+      font-size: 90%;
+    }
+    .column {
+      padding: 0;
+    }
+    .logo {
+      width: 184px;
+      a {
+        padding: 0;
+      }
+    }
+    .menu-mobile {
+      width: 46px;
+      height: 46px;
+      overflow: auto;
+      display: block;
+      background: url(/assets/images/nav/menu-mobile.min.svg) center center no-repeat;
+      background-size: 100% auto;
+      cursor: pointer;
+    }
+    .main-menu {
+      display: none;
+      width: 100%;
+      clear: both;
+      background-color: $purple;
+      position: absolute;
+      top: 46px;
+      z-index: 150;
+      li {
+        border-bottom: 1px solid lighten($purple, 5%);
+        &.active {
+          display: none;
+        }
+        a {
+          display: block;
+          color: white;
+        }
+      }
+    }
+    .channels {
+      .for {
+        display: none;
+      }
+      a:after {
+        display: none;
+      }
+    }
+    .buttons {
+      li {
+        padding: $column-gutter/1.6 $column-gutter;
+        a {
+          width: 130px;
+        }
+      }
+    }
+  }
+  // End MOBILE Style
+
+  // Navigation bar style for MEDIUM and UP
+  @media (min-width: 640px) {
+    min-height: 88px;
+    li {
+      float: left;
+      a, span {
+        font-size: 1rem;
+        box-sizing: border-box;
+        border: 1px solid white;
+        padding: $column-gutter/2 0;
+      }
+    }
+    .channels, .page-links {
+      li {
+        padding: 0 $column-gutter/1.5;
+        a {
+          display: inline-block;
+        }
+      }
+    }
+    .page-links {
+      li.active a {
+        border-bottom: 2px solid $pink;
+      }
+      a:hover {
+        border-bottom: 2px solid $grey;
+      }
+    }
+    .channels {
+      float: left;
+      margin-right: $column-gutter;
+      li {
+        padding: 0;
+        a {
+          padding: $column-gutter/2 $column-gutter/1.5;
+        }
+        &.homes {
+          margin-right: $column-gutter/5;
+        }
+        &.active a {
+          border-color: $mid-grey;
+          color: $pink;
+          &:hover {
+            background-color: transparent;
+            border-color: $mid-grey;
+          }
+        }
+        &:hover a {
+          background-color: $light-grey;
+          border-color: $light-grey;
+        }
+      }
+    }
+    .buttons {
+      position: absolute;
+      top: $column-gutter;
+      right: $column-gutter/2;
+      li {
+        a {
+          border: 1px solid $blue;
+        }
+        &.login {
+          margin-right: $column-gutter/5;
+          a {
+            border-color: $pink;
+            &:hover {
+              background-color: darken($pink,10%);
+              border-color: darken($pink,10%);
+            }
+          }
+        }
+        &.switch {
+          a:hover {
+            background-color: $dark-blue;
+            border-color: darken($blue,10%);
+          }
+        }
+      }
+    }
+  }
+  // End MEDIUM and UP Style
+
+  // Break Points
+  @media (min-width: 640px) and (max-width: 900px)  {
+    .main-menu {
+      clear: both;
+      padding-top: $column-gutter;
+      .channels {
+        margin-right: 0;
+        li:first-child {
+          display: none;
+        }
+      }
+      .page-links {
+        clear: none;
+        padding-top: 0;
+        float: right;
+      }
+    }
+  }
+  @media (min-width: 642px) and (max-width: 1180px)  {
+    .page-links {
+      padding-top: $column-gutter;
+      clear: both;
+    }
+  }
+  // End Break Points
+}

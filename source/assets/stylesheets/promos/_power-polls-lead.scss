@@ -1,0 +1,171 @@
+.power-polls-lead {
+  .header-background {
+    background: #3a174c url(../images/promos/power-polls/texture.png) 0 0 repeat-x;
+    background-size: auto 100%;
+    background-position: right bottom;
+    min-height: 270px;
+
+    img {
+      padding: 0;
+      display: block;
+    }
+
+    .image-container {
+      @media #{$large-up} {
+        max-width: 80rem;
+        margin: 0 auto;
+        overflow-x: visible;
+        height: 224px;
+        position: relative;
+        & > div {
+          float: left;
+          position: absolute;
+        }
+      }
+    }
+  }
+
+  .free-power {
+    @media #{$large-up} {
+      width: 994px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: -455px;
+      bottom: 0;
+      margin: auto;
+      overflow: hidden;
+      img {
+        width: 100%;
+        position: relative;
+        top: -30px;
+      }
+    }
+  }
+
+  .plus {
+    img {
+      width: 38px;
+      height: auto;
+    }
+    @media #{$medium-up} {
+      img {
+        width: 58px;
+      }
+    }
+    @media #{$large-up} {
+      width: 58px;
+      height: 58px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 184px;
+      bottom: 0;
+      margin: auto;
+      img {
+        width: inherit;
+        height: inherit;
+      }
+    }
+  }
+
+  .gs-badge {
+    padding-bottom: 66px;
+    img {
+      width: 40%;
+      height: auto;
+      @media #{$medium-up} {
+        width: 30%;
+      }
+    }
+    @media #{$large-up} {
+      margin-left: -105px;
+      padding: 0;
+      width: 368px;
+      height: 200px;
+      top: 0;
+      right: 0;
+      left: 650px;
+      bottom: 0;
+      margin: auto;
+      img {
+        width: auto;
+        height: inherit;
+      }
+    }
+  }
+
+  .form-contact {
+    .button {
+      margin-bottom: 0;
+    }
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .talk-to-humans {
+    display: none;
+  }
+
+  .vimeo {
+    margin: 50px auto;
+    position: relative;
+    @media #{$small-only} {
+      margin: 20px auto;
+    }
+    .embed-container {
+      @include acrossResolution(width, 284px, 400px, 600px);
+      @include acrossResolution(height, 158px, 223px, 334px);
+      margin: 0 auto;
+      position: relative;
+      cursor: pointer;
+      .play-btn {
+        width: 120px;
+        height: auto;
+        display: block;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 100;
+      }
+      .time {
+        width: 100%;
+        height: 30px;
+        position: absolute;
+        top: 90px;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        color: $white;
+        z-index: 100;
+      }
+      &:after {
+        content: " ";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 95;
+        background-color: $magenta;
+        opacity: 0.8;
+        transition: all 1s;
+      }
+      &.fade-background {
+        &:after {
+          opacity: 0;
+          display: none;
+        }
+      }
+    }
+    iframe {
+      @include acrossResolution(width, 284px, 400px, 600px);
+      @include acrossResolution(height, 158px, 223px, 334px);
+    }
+  }
+}

@@ -1,0 +1,49 @@
+.deals {
+  p {
+    font-size: $paragraph-font-size;
+    display: inline-block;
+    margin: 0;
+    line-height: 35px;
+    vertical-align: middle;
+  }
+  .row {
+    padding: $column-gutter/3 0;
+  }
+  .dollar50, .dollar75, .dollar100, .dollar150, .dollar250 {
+    width: 57px;
+    height: 35px;
+    overflow: hidden;
+    display: inline-block;
+    text-indent: -9000px;
+    background: url('/assets/images/deals/50dollar.min.svg') center center no-repeat;
+    vertical-align: middle;
+  }
+  .dollar100 {
+    width: 78px;
+    background: url('/assets/images/deals/100dollar.min.svg') center center no-repeat;
+  }
+  .dollar75 {
+    width: 54px;
+    background: url('/assets/images/deals/75dollar.min.svg') center center no-repeat;
+  }
+  .dollar150 {
+    width: 78px;
+    background: url('/assets/images/deals/150dollar.min.svg') center center no-repeat;
+  }
+  .dollar250 {
+    width: 78px;
+    background: url('/assets/images/deals/250dollar.min.svg') center center no-repeat;
+  }
+  @media #{$small-only} {
+    p {
+      a {
+        display: inline-block;
+      }
+    }
+  }
+  .not-show-tablet-down {
+    @media (max-width: 800px) {
+      display: none;
+    }
+  }
+}

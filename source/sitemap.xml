@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+
+<url>
+  <loc>http://www.powershop.co.nz/</loc>
+  <lastmod>2013-05-09T03:03:27+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://www.powershop.co.nz/business/</loc>
+  <lastmod>2013-05-09T03:03:27+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.powershop.co.nz/questions-answered/</loc>
+  <lastmod>2013-05-09T03:03:27+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>http://www.powershop.co.nz/switch-now/</loc>
+  <lastmod>2013-05-09T03:03:27+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.powershop.co.nz/toolkit/</loc>
+  <lastmod>2013-05-09T03:03:27+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.powershop.co.nz/how-much-does-it-cost/</loc>
+  <lastmod>2013-05-09T03:03:27+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.powershop.co.nz/contact-us/</loc>
+  <lastmod>2013-05-09T03:03:27+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>http://www.powershop.co.nz/moving-house/</loc>
+  <lastmod>2013-05-09T03:03:27+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.50</priority>
+</url>
+<url>
+  <loc>http://www.powershop.co.nz/keep-me-posted/</loc>
+  <lastmod>2013-05-09T03:03:27+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.50</priority>
+</url>
+<url>
+  <loc>http://www.powershop.co.nz/sitemap/</loc>
+  <lastmod>2013-05-09T03:03:27+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.50</priority>
+</url>
+<url>
+  <loc>http://www.powershop.co.nz/business/moving-premises/</loc>
+  <lastmod>2013-05-09T03:03:27+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.50</priority>
+</url>
+<url>
+  <loc>http://www.powershop.co.nz/about-us/</loc>
+  <lastmod>2013-05-09T03:03:27+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.50</priority>
+</url>
+<url>
+  <loc>http://www.powershop.co.nz/privacy-policy/</loc>
+  <lastmod>2013-05-09T03:03:27+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.50</priority>
+</url>
+<url>
+  <loc>http://www.powershop.co.nz/terms-and-conditions/</loc>
+  <lastmod>2013-05-09T03:03:27+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.50</priority>
+</url>
+<url>
+  <loc>http://www.powershop.co.nz/fees/</loc>
+  <lastmod>2013-05-09T03:03:27+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.50</priority>
+</url>
+<url>
+  <loc>http://www.powershop.co.nz/refunds/</loc>
+  <lastmod>2013-05-09T03:03:27+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.50</priority>
+</url>
+<url>
+  <loc>http://www.powershop.co.nz/mobile-apps/</loc>
+  <lastmod>2013-05-09T03:03:27+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.50</priority>
+</url>
+<url>
+  <loc>http://www.powershop.co.nz/complaints/</loc>
+  <lastmod>2013-05-09T03:03:27+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.50</priority>
+</url>
+<url>
+  <loc>http://www.powershop.co.nz/terms-and-conditions/customer/</loc>
+  <lastmod>2013-07-23T03:03:27+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>http://www.powershop.co.nz/terms-and-conditions/website/</loc>
+  <lastmod>2014-03-23T03:03:27+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>http://www.powershop.co.nz/content/terms-and-conditions/2014-03-24-Terms-and-Conditions.pdf</loc>
+  <lastmod>2014-03-21T03:03:27+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.5</priority>
+</url>
+</urlset>

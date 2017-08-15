@@ -1,0 +1,293 @@
+@import "compass/css3/images";
+
+html {
+  @media #{$small-only} {
+    font-size: 90%; //notes here why
+  }
+  body {
+    letter-spacing: 0.02em;
+    // Not sure I we should use these two yet...
+    // They increase the size of the outer gutters only to match a standard gutter (supposedly)
+    // See _settings.scss > $column-gutter for gutter width
+    .row {
+      // padding-left: rem-calc(10);
+      // padding-right: rem-calc(10);
+      padding-left: $column-gutter/2;
+      padding-right: $column-gutter/2;
+      .row {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+  }
+}
+
+hr {
+  margin: 40px 0;
+}
+
+.box {
+  padding: 40px;
+}
+
+.sub-text {
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.error-text {
+  color: $magenta;
+  font-size: .9rem;
+}
+
+// List style without using images
+// To remove the bullet, use display none on ::before
+ul.list-bullet {
+  padding-left: 1.5em;
+  li {
+    margin-bottom: $paragraph-margin-bottom/1.5;
+    list-style: none;
+    position: relative;
+    &::before {
+      color: $magenta;
+      content: "\2022";
+      position: absolute;
+      top: -0.1em;
+      left: -0.9em;
+      font-size: 1.5em;
+    }
+  }
+}
+
+ul.inline-list {
+  li {
+    float: none;
+  }
+  margin-bottom:  $paragraph-margin-bottom/2.5;
+}
+// End List style
+
+// Background Colors
+div, section {
+  &.pink { background-color: $pink; }
+  &.medium-pink { background-color: $medium-pink; }
+  &.rose { background-color: $rose; }
+  &.purple {background-color: $purple;}
+  &.magenta { background-color: $magenta;}
+  &.white { background-color: white;}
+  &.very-light-blue, form.very-light-blue { background-color: $very-light-blue; }
+  &.light-blue { background-color: $light-blue; }
+  &.mid-blue { background-color: $mid-blue; }
+  &.dark-blue { background-color: $dark-blue; }
+  &.bigbill-blue { background-color: $bigbill-blue; }
+  &.blue { background-color: $blue; }
+  &.lightest-grey { background-color: $lightest-grey; }
+  &.very-light-grey {background-color: $very-light-grey; }
+  &.light-grey { background-color: $light-grey; }
+  &.mid-grey { background-color: $mid-grey; }
+  &.grey { background-color: $grey }
+  &.dark-grey { background-color: $dark-grey; }
+  &.very-dark-grey { background-color: $very-dark-grey; }
+  &.darkest-grey { background-color: $darkest-grey; }
+  &.bg-gradient {
+    background-color: #ef9c2e;
+    $experimental-support-for-svg: true;
+    @include background-image(linear-gradient(left bottom,  #ef9c2e 0%,#fa0e6a 52%,#bc216b 82%,#662244 100%));
+  }
+  &.two-colours {
+    $experimental-support-for-svg: true;
+    @media #{$small-only} {
+      @include background-image(linear-gradient(top, #bc216b 0%,#bc216b 50%,#662244 50%));
+    }
+    @include background-image(linear-gradient(left, #bc216b 0%,#bc216b 50%,#662244 50%,#662244 100%));
+  }
+}
+// End Background Colors
+
+// Paragraphs sizes
+p {
+  &.big {
+    font-size: $paragraph-font-size + 0.15;
+  }
+  &.small {
+    font-size: $paragraph-font-size - 0.15;
+  }
+  &.smaller {
+    font-size: $paragraph-font-size - 0.25;
+  }
+}
+// End Paragraphs sizes
+
+.uppercase {
+  text-transform: uppercase
+}
+
+// Text Colors
+.pink-type {
+  color: $pink;
+}
+
+.medium-pink-type {
+  color: $medium-pink;
+}
+
+.rose-type {
+  color: $rose;
+}
+
+.purple-type {
+  color: $purple;
+}
+
+.magenta-type {
+  color: $magenta;
+}
+
+.white-type {
+  color: white;
+  h1, h2, h3, h4, h5, h6, p, ul, ol, span {color: white;} // could be a better way to sass this
+  a {color: $light-blue;}
+}
+
+.very-light-blue-type {
+  color: $very-light-blue;
+}
+
+.light-blue-type {
+  color: $light-blue;
+}
+
+.mid-blue-type {
+  color: $mid-blue;
+}
+
+.blue-type {
+  color: $blue;
+}
+
+.lightest-grey-type {
+  color: $lightest-grey;
+}
+
+.very-light-grey-type {
+  color: $very-light-grey;
+}
+
+.light-grey-type {
+  color: $light-grey;
+}
+
+.mid-grey-type {
+  color: $mid-grey;
+}
+
+.grey-type {
+  color: $grey;
+}
+
+.dark-grey-type {
+  color: $dark-grey;
+}
+
+.very-dark-grey-type {
+  color: $very-dark-grey;
+}
+
+.darkest-grey-type {
+  color: $darkest-grey;
+}
+
+//Default link <a> colour on some backgrounds
+.pink, .magenta, .purple, .two-colours, .bg-gradient {
+  a {
+    color: $light-blue;
+  }
+}
+
+// End Text Colors
+
+// Margins & Paddings
+.margin-zero {
+  margin: 0;
+}
+.margin-right-zero {
+  margin-right: 0;
+}
+.margin-left-zero {
+  margin-left: 0;
+}
+.margin-bottom-zero {
+  margin-bottom: 0;
+}
+.small-margin-bottom {
+  margin-bottom: $paragraph-margin-bottom/2;
+}
+
+.padding { // *standard* padding
+  @include acrossResolution(padding-top, 2rem);
+  @include acrossResolution(padding-bottom, 1.5rem);
+}
+.padding-bottom-last {
+  @include acrossResolution(padding-bottom, 4rem);
+}
+.padding-zero {
+  padding: 0;
+}
+.padding-bottom-zero {
+  padding-bottom: 0;
+}
+.padding-top {
+  @include acrossResolution(padding-top, 2rem);
+}
+.no-gutter {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+.wide-gutter {
+  .columns {
+    padding-left: $column-gutter;
+    padding-right: $column-gutter;
+  }
+}
+.padding-right-zero, .no-gutter-right {
+  padding-right: 0;
+}
+.padding-left-zero, .no-gutter-left {
+  padding-left: 0;
+}
+// End Margins & Paddings
+
+// Image Scale
+.no-scale {
+  width: auto;
+}
+
+// arrow right
+.arrow-right {
+  width: 16px;
+  margin-right: 8px;
+}
+// toggle this class
+.arrow-down {
+  transform: rotate(90deg);
+}
+
+// --------------- Invert ----------------
+.invert {
+  //background-color: $darkest-grey;
+  h1, h2, h3, h4, h5, h6 {color: $mid-grey;}
+  p, ul, ol {color: $grey;}
+  a {color: $light-blue;}
+}
+
+.column-wrapper {
+  margin: 0 auto;
+}
+
+.button {
+  background-color: $blue;
+  &:hover {
+    background-color: $dark-blue;
+    text-decoration: none;
+  }
+}

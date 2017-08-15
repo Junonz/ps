@@ -1,0 +1,58 @@
+/* 
+ * Foundation Icons v 3.0
+ * Made by ZURB 2013 http://zurb.com/playground/foundation-icon-fonts-3
+ * MIT License
+ */
+
+@font-face {
+  font-family: "powershop_uiregular";
+  src: url("/assets/fonts/psui-regular-webfont.eot");
+  src: url("/assets/fonts/psui-regular-webfont.eot?#iefix") format("embedded-opentype"),
+       url("/assets/fonts/psui-regular-webfont.woff") format("woff"),
+       url("/assets/fonts/psui-regular-webfont.ttf") format("truetype"),
+       url("/assets/fonts/psui-regular-webfont.svg#fontcustom") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.psui-homes:after,
+.psui-business:after,
+.psui-icon-pdf-uppercase:before,
+.psui-icon-phone-uppercase:before,
+.psui-icon-phone-lowercase:before,
+.psui-icon-skype-uppercase:before,
+.psui-icon-skype-lowercase:before,
+.psui-icon-fax-uppercase:before,
+.psui-icon-fax-lowercase:before,
+.psui-icon-email-uppercase:before,
+.psui-icon-email-lowercase:before,
+.psui-icon-ai-uppercase:before,
+.psui-icon-pencil-uppercase:before,
+.psui-icon-pencil-lowercase:before {
+  font-family: "powershop_uiregular";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  text-decoration: inherit;
+}
+
+.psui-homes:after{ content: "H"; margin-left: 0.4rem }
+.psui-business:after { content: "B"; margin-left: 0.4rem }
+
+.psui-icon-pdf-uppercase:before   { content: "D"; margin-right: 0.4rem;}
+.psui-icon-phone-uppercase:before { content: "P"; margin-right: 0.5rem;}
+.psui-icon-phone-lowercase:before { content: "p"; margin-right: 0.5rem;}
+.psui-icon-skype-uppercase:before { content: "S"; margin-right: 0.5rem;}
+.psui-icon-skype-lowercase:before { content: "s"; margin-right: 0.5rem;}
+.psui-icon-fax-uppercase:before   { content: "F"; margin-right: 0.5rem;}
+.psui-icon-fax-lowercase:before   { content: "f"; margin-right: 0.5rem;}
+.psui-icon-email-uppercase:before { content: "E"; margin-right: 0.5rem;}
+.psui-icon-email-lowercase:before { content: "e"; margin-right: 0.5rem;}
+.psui-icon-ai-uppercase:before    { content: "I"; margin-right: 0.5rem;}
+.psui-icon-pencil-uppercase:before { content: "C"; margin-right: 0.5rem;}
+.psui-icon-pencil-lowercase:before { content: "c"; margin-right: 0.5rem;}

@@ -1,0 +1,206 @@
+.credit150 {
+  .header-background, .header-background-warm, .header-background-cold {
+    position: relative;
+    overflow: auto;
+    background-color: #5abbe4;
+    min-height: 350px;
+    overflow: hidden;
+    @media #{$small-only} {
+      min-height: 210px;
+    }
+    .row .end {
+      position: relative;
+      height: 350px;
+      @media #{$small-only} {
+        display: none;
+      }
+      .guy, .cuckoo {
+        display: none;
+        width: 50%;
+        height: 350px;
+        background: url(/assets/images/promos/150credit/man.png) left bottom no-repeat;
+        background-size: auto 75%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        @media (min-width: 860px) {
+          display: block;
+        }
+      }
+      .cuckoo {
+        background: url(/assets/images/promos/150credit/cuckoo.png) right bottom no-repeat;
+        background-size: auto 80%;
+        right: 80px;
+        left: auto;
+        @media (max-width: 1150px) {
+          right: 0;
+        }
+      }
+      .guy {
+        @media (max-width: 1150px) {
+          left: -100px;
+        }
+      }
+    }
+  }
+  .header-background-warm {
+    background: #f95ab0 url(/assets/images/promos/150credit/pattern.png) 0 0 repeat;
+    background-size: 391px auto;
+    .row .end {
+      @media #{$small-only} {
+        display: block;
+        height: 210px;
+      }
+    }
+    .special-man {
+      width: 475px;
+      height: 350px;
+      display: none;
+      background: url(/assets/images/promos/150credit/special-man.png) center bottom no-repeat;
+      background-size: 100% auto;
+      position: absolute;
+      right: -20px;
+      @media #{$medium-up} {
+        display: block;
+      }
+      @include acrossResolution(width, 475px, 60%, 475px);
+      @include acrossResolution(background-position, right center, 80px center, right -60px);
+    }
+  }
+  .header-background-cold {
+    background: #ffdc00 url(/assets/images/promos/150credit/bolt.png) top left repeat;
+    background-size: 175px auto;
+    .row .end {
+      @media #{$small-only} {
+        display: block;
+        height: 210px;
+      }
+    }
+    .cut-string {
+      width: 690px;
+      height: 350px;
+      background: url(/assets/images/promos/150credit/cut-string.png) center bottom no-repeat;
+      background-size: 100% auto;
+      position: absolute;
+      right: -65%;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      @media #{$small-only} {
+        display: none;
+      }
+      @media #{$xlarge-up} {
+        right: -35%;
+      }
+    }
+  }
+  .save-power {
+    width: 100%;
+    height: 350px;
+    background: url(/assets/images/promos/150credit/save-power.png) center 40px no-repeat;
+    background-size: 100% auto;
+    text-indent: -900000px;
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    @include acrossResolution(background-size, auto 110px, 70% auto, 620px auto);
+    z-index: 148;
+    @media #{$small-only} {
+     height: 150px;
+    }
+  }
+  .shop-til-drop {
+    width: 60%;
+    height: 60px;
+    overflow: hidden;
+    background: url(/assets/images/promos/150credit/shop-til-drop.png) center center no-repeat;
+    background-size: 100% auto;
+    text-indent: -900000px;
+    position: absolute;
+    top: 120px;
+    bottom: auto;
+    left: 40px;
+    @include acrossResolution(left, 0, 35px, 50px);
+    right: auto;
+    margin: auto;
+    z-index: 140;
+    @media (min-width: 440px) and (max-width: 639px)  {
+      width: 45%;
+    }
+    @media #{$small-only} {
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background: url(/assets/images/promos/150credit/shop-til-drop-mobile.png) center center no-repeat;
+      background-size: 100% auto;
+      height: 175px;
+    }
+  }
+  .no-contracts {
+    width: 580px;
+    height: 100px;
+    position: absolute;
+    background: url(/assets/images/promos/150credit/no-contracts.png) center center no-repeat;
+    background-size: 100% auto;
+    top: -80px;
+    bottom: 0;
+    margin: auto;
+    right: auto;
+    left: 60px;
+    overflow: auto;
+    text-indent: -9000px;
+    z-index: 140;
+    @include acrossResolution(width, 90%, 440px, 580px);
+    @include acrossResolution(left, 0, 20px, 60px);
+    @media #{$small-only} {
+      right: 0;
+      top: 0;
+    }
+  }
+  .sg-badge {
+    display: block;
+    margin: -80px auto $paragraph-margin-bottom*1.5 auto;
+  }
+  .promo-body {
+    margin-top: 2em;
+    @media #{$medium-up} {
+      margin-top: -3em;
+    }
+  }
+  .credit150 {
+    padding-top: $paragraph-margin-bottom;
+  }
+  h2 {
+    line-height: 1.05em;
+    @media #{$medium-up} {
+      font-size: 3em;
+    }
+  }
+  .mobile-white {
+    @media #{$small-only} {
+      background-color: $white !important;
+    }
+  }
+  h3.pink-type.testimonial {
+    padding-bottom:0;
+    margin: 1.2em 0 0.4em;
+  }
+  .testimonial-author {
+    font-size:1rem;
+    margin-bottom: $paragraph-margin-bottom*2;
+  }
+  .key-message {
+    margin-bottom: $paragraph-margin-bottom*3;
+    p {
+      margin-bottom: $paragraph-margin-bottom/2;
+    }
+    span {
+      font-size:1.3rem;
+      line-height:1.7em;
+      padding-left:20px;
+      background: url('/assets/images/promos/no-more-shocks/lightening.png') no-repeat center left;
+    }
+  }
+}

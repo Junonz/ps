@@ -1,0 +1,307 @@
+.you-cant-lose {
+  @media (min-width: 1px) {
+    .green-beard {
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: 40px;
+      display: block;
+      .the-guy {
+        display: none;
+      }
+    }
+    .magenta {
+      height: 300px;
+      position: relative;
+      background-image: url(../images/campaigns/you-cant-lose/txre-2-top.png);
+      background-repeat: repeat-x;
+      background-position: right top;
+      background-size: 5px auto;
+    }
+    .main-title {
+      width: 100%;
+      height: 300px;
+      text-indent: -9000px;
+      overflow: hidden;
+      display: block;
+      margin: 0;
+      background: url(../images/campaigns/you-cant-lose/cant-lose-mobile.png) left 123% top 0 no-repeat;
+      background-size: 150% auto;
+      position: relative;
+      z-index: 50;
+    }
+    .play {
+      width: 96px;
+      height: 45px;
+      display: block;
+      position: absolute;
+      top: 72%;
+      left: 0;
+      right: 0;
+      margin: auto;
+      z-index: 50;
+      text-align: center;
+      color: $white;
+      font-size: .9rem;
+      path:nth-child(1) {
+        opacity: 0.5;
+        fill: $white;
+      }
+      &:hover {
+        text-decoration: none;
+        path:nth-child(1) {
+          opacity: 0.2;
+        }
+      }
+    }
+    .free-power-150 {
+      width: 213px;
+      height: 45px;
+      display: block;
+      margin: 0 auto 15px auto;
+      .number, .free-power {
+        fill: $white;
+      }
+      .shadow {
+        fill: darken($pink, 10%);
+      }
+    }
+    .gs-badge {
+      width: 240px;
+      height: 86px;
+      display: block;
+      margin: 0 auto 40px auto;
+      .white {
+        fill: $white;
+      }
+      .grey {
+        fill: $grey;
+      }
+      .shadow {
+        fill: darken($pink, 10%);
+      }
+    }
+    .pink {
+      text-align: center;
+      background-image: url(../images/campaigns/you-cant-lose/txre-1-btm.png);
+      background-repeat: repeat-x;
+      background-position: left bottom ;
+      background-size: 5px auto;
+      h3 {
+        font-size: 1.15rem;
+        padding: 40px 20px 20px 20px;
+        margin-bottom: 20px;
+        font-weight: 300;
+      }
+    }
+    .button {
+      color: $white;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      margin-bottom: 40px;
+      font-size: 1rem;
+      position: relative;
+      padding-right: 45px;
+      &::after {
+        width: 20px;
+        height: 20px;
+        content: " ";
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 2px;
+        bottom: 0;
+        margin: auto;
+        background: url('../images/campaigns/you-cant-lose/arrow.min.svg') 0 0 no-repeat;
+      }
+    }
+  }
+  @media (min-width: 400px) {
+    .magenta {
+      height: 400px;
+    }
+    .main-title {
+      background: url(../images/campaigns/you-cant-lose/cant-lose-mobile.png) left 123% top 0 no-repeat;
+      background-size: 150% auto;
+    }
+  }
+  @media (min-width: 510px) {
+    .green-beard {
+      right: 0;
+      left: 0;
+      margin: auto;
+    }
+    .main-title {
+      background: url(../images/campaigns/you-cant-lose/cant-lose-mobile.png) left 230% top 0 no-repeat;
+      background-size: 115% auto;
+    }
+    .pink h3 {
+      padding-right: 80px;
+      padding-left: 80px;
+    }
+  }
+  @media (min-width: 650px) {
+    .magenta {
+      height: 500px;
+    }
+    .main-title {
+      width: 100%;
+      height: 400px;
+    }
+    .play {
+      width: 110px;
+    }
+    .pink  {
+      div {
+        width: 500px;
+        margin: 0 auto;
+        overflow: auto;
+        clear: both;
+      }
+      svg {
+        float: left;
+      }
+    }
+    .free-power-150 {
+      margin-top: 20px;
+      margin-right: 15px;
+    }
+    .gs-badge {
+      margin-left: 15px;
+    }
+  }
+  @media (min-width: 768px) {
+    .green-beard {
+      right: 0;
+      margin: auto;
+      left: 0;
+    }
+  }
+  @media (min-width: 815px) {
+    .main-title {
+      background-size: 95% auto;
+      background-position: right 489% top 0;
+    }
+  }
+  @media (min-width: 960px) {
+    position: relative;
+    overflow: auto;
+    background-color: $magenta;
+    background-image: url("../images/campaigns/you-cant-lose/txre-2-top.png"), url("../images/campaigns/you-cant-lose/txre-2-btm.png");
+    background-position: right top, right bottom;
+    background-repeat: repeat-x;
+    background-size: 5px auto;
+    .main-title {
+      background: none;
+      display: none;
+    }
+    &::after {
+      content: " ";
+      width: 100%;
+      height: 435px;
+      position: absolute;
+      z-index: 20;
+      background-image: url(../images/campaigns/you-cant-lose/cant-lose-desktop.png);
+      background-repeat: no-repeat;
+      background-position: left calc( 50% - 1235px )  bottom -17%;
+      background-size: auto 700px;
+      top: 0;
+      left: 0;
+      transition: background-position .85s ease;
+    }
+    .container {
+      max-width: 80em;
+      margin: 0 auto;
+      overflow: auto;
+    }
+    .green-beard {
+      width: 475px;
+      height: 100%;
+      right: 10px;
+      margin: 0;
+      left: auto;
+      .the-guy {
+        display: block;
+      }
+    }
+    .play {
+      top: 0;
+      bottom: 0;
+    }
+    .pink, .magenta {
+      float: left;
+    }
+    .magenta {
+      width: 70%;
+      height: 435px;
+      background: none;
+    }
+    .pink {
+      width: 30%;
+      height: 435px;
+      position: relative;
+      z-index: 50;
+      background-image: url("../images/campaigns/you-cant-lose/txre-1-top.png"), url("../images/campaigns/you-cant-lose/txre-1-btm.png");
+      background-position: right top, right bottom;
+      h3 {
+        padding: 40px 20px;
+        margin-bottom: 0;
+      }
+      div {
+        width: auto;
+      }
+      svg {
+        float: none;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 0;
+      }
+    }
+    .button {
+      margin-bottom: 0;
+    }
+  }
+  @media (min-width: 1000px) {
+    &::after {
+      background-position: left calc( 50% - 1255px )  bottom -17%;
+    }
+  }
+  @media (min-width: 1100px) {
+    &::after {
+      background-position: left calc( 50% - 1285px )  bottom -17%;
+    }
+  }
+  @media (min-width: 1200px) {
+    &::after {
+      background-position: left calc( 50% - 1335px )  bottom -17%;
+    }
+  }
+}
+
+.cant-lose-video {
+  background-color: transparent;
+  .close-reveal-modal {
+    display: block;
+    position: relative;
+    color: $white;
+    text-align: right;
+    clear: both;
+    top: auto;
+    right: auto;
+    line-height: inherit;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  .vimeo {
+    width: 100%;
+    height: auto;
+    padding-bottom: 56.25%;
+    position: relative;
+    box-sizing: border-box;
+    border: 1px solid $white;
+  }
+  .vimeo iframe, .vimeo object, .vimeo embed {
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 80;
+  }
+}

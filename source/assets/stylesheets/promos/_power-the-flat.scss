@@ -1,0 +1,42 @@
+.power-the-flat {
+    .titles {
+        padding-top: 0.8em;
+        @media #{$small-only} {
+            padding-top: 0;
+        }
+    }
+    .header-background {
+        background: url(../images/promos/bribe/bribe-bg.jpg) 0 0 no-repeat;
+        background-color: $pink;
+        background-size: cover;
+        position: relative;
+        @media #{$small-only} {
+            .row .end {
+                display: block;
+                height: 210px;
+            }
+        }
+    }
+    .key-message {
+        margin-bottom: 0;
+         @media #{$small-only} {
+            margin-bottom: 40px;
+         }
+    }
+    .credit-150-white {
+        width: auto;
+        height: 200px;
+        display: block;
+        position: absolute;
+        margin: auto;
+        top: -35px;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        @media #{$small-only} {
+            width: 80%;
+            height: auto;
+            top: 0;
+        }
+    }
+}

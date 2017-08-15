@@ -1,0 +1,246 @@
+---
+title: "Our prices - Powershop, a better power company"
+section: "residential"
+navigation: "prices"
+---
+
+<div id="calculator" class="">
+  <section id="error-view" class="bg-gradient error" style="display:none;">
+    <div class="row padding white-type text-center">
+      <div class="small-12 columns end">
+        <h1>Um, er... ok?</h1>
+        <h3>Sorry 'bout this, but something went wrong.</h3>
+        <%= partial "assets/images/404/baby.svg" %>
+        <p>Perhaps you oughta head on over to the <a href="/">home page</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="very-light-grey" id="price-result">
+    <div class="row padding">
+    <div class="small-12 small-centered medium-11 large-9 columns text-center end">
+      <h2>Sweet! Here’s your estimated price</h2>
+<% consumption_bands(network_area).each.with_index do |consumption_band, i| %>
+      <div class="table-rates consumption-band <%= dashify(consumption_band.name) %>" <%= 'style="display:none;"' if i > 0 %>>
+        <h3>
+          <span id="price-result-network-area"><%= network_area %></span>
+            <span id="price-result-user-tariff"><%= consumption_band.name %></span>
+          rates
+        </h3>
+        <div id="price-showdown" class="table-wrap">
+          <table cellspacing="0" cellpadding="0" border="0">
+          <tbody>
+  <% consumption_band.fixed_rates.select(&:default).each do |rate| %>
+            <tr>
+              <th><%= rate.description %> <%= "(#{rate.unit_of_measure})" if rate.unit_of_measure.present? %></th>
+              <td><%= format_with_gst rate.average %></td>
+            </tr>
+  <% end %>
+            <tr class="subtitle-cell">
+            <th colspan="2">
+              Average Usage Charges <a href="#" class="over-year-info" title="See what your price would be look like month to month" alt="Over year prices"><%= partial "assets/images/prices/info.svg" %></a>
+            </th>
+            </tr>
+          </tbody>
+          <tbody id="kwh-charge">
+  <% consumption_band.variable_rates.select(&:default).each do |rate| %>
+            <tr>
+              <th><%= rate.description %> <%= "(#{rate.unit_of_measure})" if rate.unit_of_measure.present? %></th>
+              <td><%= format_with_gst rate.average %></td>
+            </tr>
+  <% end %>
+          </tbody>
+          </table>
+          <p class="small">These estimated prices include GST</p>
+          <a href="/switch-now" class="button">Switch now</a>
+        </div>
+      </div>
+<% end %>
+      <div class="row padding disclaimer">
+        <div class="small-11 small-centered medium-12 columns text-center end">
+          <h3>We’ve made some assumptions about how you use power:</h3>
+          <ul>
+            <li><%= partial "assets/images/prices/location.svg" %><p>You are on the most common tariff in your region<span id="price-result-register-configuration"></span></p></li>
+            <li><%= partial "assets/images/prices/plug.svg" %><p>You use power in the typical seasonal pattern for your area, this is the property that you live in most of the time, and you are with Powershop for a full year.</p></li>
+            <li><%= partial "assets/images/prices/bolt.svg" %><p>Unless you have specified that you are a low user, you use 8,000 kWh per year if you live north of Arthur’s Pass, or 9,000 kWh per year if you live south of Arthur’s Pass.</p></li>
+            <li><%= partial "assets/images/prices/simple-saver.svg" %><p>You purchase the Powershop Simple Saver Powerpack once a month and Special Powerpacks that are made available from time to time.</p></li>
+          </ul>
+          <p class="not-you big">
+          Doesn't sound like you? Scroll down and tell us more about your power situation.
+          </p>
+        </div>
+      </div>
+    </div>
+    </div>
+    <a href="#" id="btn-next" class="btn-next">
+    <svg class="arrow dark-grey" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 13" ><path d="M22 2.102l-2.121-2.102-8.879 8.797-8.879-8.797-2.121 2.102 11 10.898z"/></svg>
+    <svg class="half-circle grey" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 38" enable-background="new 0 0 96 38"><path d="M48 37c22.2 0 40.5-16 47-36h-94c6.5 20 24.8 36 47 36z"/></svg>
+    </a>
+  </section>
+
+  <section id="tell-us-more" style="display:block;" class="purple tell-us-more padding">
+    <div class="row padding">
+      <div class="small-12 small-centered medium-11 columns white-type end">
+        <div class="small-12 small-centered medium-11 large-9 columns end padding">
+          <div class="wrap">
+            <div class="powershop-customer">
+              <%= partial "assets/images/prices/powershop-customer.min.svg" %>
+            </div>
+            <div class="text-block">
+              <p class="big">These prices are based on a <%= consumption_bands(network_area).first.label.downcase %> in your area. However your usage<span style="display:none"> or meter set-up</span> may be a bit different.</p>
+              <p class="big margin-zero"><a href="#" id="show-refine-selection">Tell us more about your power situation.</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="light-grey more-about-you" id="refine-details" style="display:none;">
+    <div class="row padding">
+      <div class="small-12 small-centered medium-8 columns end">
+        <h2 class="text-center">More about you</h2>
+        <form id="refine-details-form">
+          <div class="users-type">
+            <h3 class="margin-zero label-style">Are you a low user?</h3>
+            <p class="small-text">
+              If you use less than 8,000 kWh per year and you live north of Arthur’s Pass, or 9,000 kWh per year and you live south of Arthur’s Pass, and this is the property that you live in most of the time.
+            </p>
+            <% consumption_bands(network_area).each.with_index do |consumption_band, i| %>
+            <p class="margin-zero">
+              <label>
+                <input type="radio" name="user-type" value="<%= dashify(consumption_band.name) %>" <%= 'checked' if i.zero? %>><%= consumption_band.label %></input>
+              </label>
+            </p>
+            <% end %>
+          </div>
+          <div class="" style="display:none;">
+            <p class="margin-zero">
+              <label class="label-style">Who is your current energy retailer?</label>
+              <select id="available-retailers" class="select-box"></select>
+            </p>
+          </div>
+          <div class="" style="display:none;">
+            <p class="margin-zero">
+              <label class="label-style">How is your meter set up?</label>
+              <span class="small-text">You’ll find this information in a recent power bill</span>
+              <select id="available-retailer-plans" class="select-box"></select>
+            </p>
+          </div>
+          <button type="submit" class="button magenta">Update</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <section id="see-your-prices" style="display:block;" class="white over-year">
+    <div class="row padding">
+      <div class="small-12 small-centered medium-11 text-center columns padding end">
+        <h2 class="text-center">See your prices over a year</h2>
+        <p class="big">Our prices move with the seasons.
+          <br/>See what your price would look like month to month.</p>
+        <p class="big"><a href="#" id="show-price-breakdown">Show me.</a></p>
+      </div>
+    </div>
+  </section>
+  <section id="price-breakdown" style="display:none;" class="white padding">
+    <div class="row">
+      <div class="small-12 small-centered columns end text-center no-gutter">
+        <h2>Your estimated prices month to month</h2>
+
+<% consumption_bands(network_area).each.with_index do |consumption_band, i| %>
+        <div class="consumption-band <%= dashify(consumption_band.name) %>" <%= 'style="display:none;"' unless i.zero? %>>
+        <p><span id="breakdown-user-tariff"><%= consumption_band.label %></span> rates for <span id="breakdown-network-area"><%= network_area %></span> customers</p>
+        <p class="pink-type smaller scroll-sideway">You can scroll this table sideways</p>
+        <div class="table-month-to-month">
+          <table cellspacing="0" cellpadding="0" border="0" data-label="5">
+            <thead id="price-breakdown-head">
+              <tr class="months white-type">
+                <th></th><th></th>
+                <% month_names.each do |month| %>
+                  <th><%= month %></th>
+                <% end %>
+                <th>Annual Average</th>
+              </tr>
+            </thead>
+            <tbody id="price-breakdown-body">
+  <% consumption_band.fixed_rates.select(&:default).each do |rate| %>
+              <tr>
+                <th><%= rate.description %></th>
+                <td><%= "(#{rate.unit_of_measure})" if rate.unit_of_measure.present? %></td>
+
+    <% rate.months.each do |price| %>
+                <td><%= format_with_gst price %></td>
+    <% end %>
+                <td><%= format_with_gst rate.average %></td>
+              </tr>
+  <% end %>
+  <% consumption_band.variable_rates.select(&:default).each do |rate| %>
+              <tr>
+                <th><%= rate.description %></th>
+                <td><%= "(#{rate.unit_of_measure})" if rate.unit_of_measure.present? %></td>
+    <% rate.months.each do |price| %>
+                <td><%= format_with_gst price %></td>
+    <% end %>
+                <td><%= format_with_gst rate.average %></td>
+              </tr>
+  <% end %>
+            </tbody>
+          </table>
+        </div>
+        </div>
+<% end %>
+
+        <div class="disclaimer padding">
+          <p>These estimated prices include GST and assume:</p>
+          <ul>
+            <li>You are on the most common tariff in your region, unless you have selected a different plan from above.</li>
+            <li>You use power in the typical seasonal pattern for your area and you are with Powershop for a full year.</li>
+            <li>If you have selected the low user option, you use less than 8,000 kWh per year if you live north of Arthur’s Pass, or less than 9,000 kWh per year if you live south of Arthur’s Pass, and this is the property that you live in most of the time.</li>
+            <li>If your pricing is showing as the standard user option, you use 8,000 kWh per year or more if you live north of Arthur’s Pass, or 9,000 kWh per year or more if you live south of Arthur’s Pass.</li>
+            <li>You purchase the Powershop Simple Saver Powerpack once a month and Special Powerpacks that are made available from time to time.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row padding">
+      <div class="small-12 small-centered medium-8 columns end text-center">
+        <h4>
+          Powershop is designed to save you money over the course of a year. To do this, we’ve made our pricing personalised and dynamic.
+        </h4>
+      </div>
+    </div>
+    <div class="row padding">
+      <div class="small-12 small-centered medium-11 columns end">
+        <div class="row text-center">
+          <div class="small-12 medium-6 columns">
+            <img src="/assets/images/prices/personalised-pricing.png" alt="Personalised power prices" title="Personalised pricing" />
+            <p><span class="pink-type">Personalised pricing</span> is what we do instead of offering you a plan. This means we offer our best possible price for your household based on where you live, how your meter is set-up, the amount of power you use over the year and when you use it.</p>
+          </div>
+          <div class="small-12 medium-6 columns end">
+            <img src="/assets/images/prices/dynamic-pricing.png" alt="Cheapest power company" title="Dynamic pricing" />
+            <p><span class="pink-type">Dynamic pricing</span> means the price of our power goes up and down seasonally reflecting costs on the electricity wholesale market. In summer when power is cheaper, we pass those savings on to you. In winter our prices increase, but only slightly.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="very-light-grey switch-phone" style="display:block;">
+    <div class="row padding">
+      <div class="small-12 small-centered medium-8 columns text-center end">
+        <%= partial "assets/images/homes/winky-chat.min.svg" %>
+        <h2 class="margin-zero">Switch on the phone</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="small-8 small-centered medium-7 large-5 columns text-center end">
+        <a href="tel:0800-1000-60">
+          <%= partial "assets/images/homes/phone-and-icon-pink.min.svg" %>
+        </a>
+        <p class="big padding">Call us between 9am - 9pm, Monday to Friday.</p>
+      </div>
+    </div>
+  </section>
+  <%= partial "assets/images/prices/winky-loading.svg" %>
+</div>
+
+<%= javascript_include_tag  "modules/how-much-does-it-cost" %>

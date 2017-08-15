@@ -1,0 +1,34 @@
+.what-you-need {
+
+  ol {
+      font-size: 1.75em;
+      line-height: 1.75em;
+      //border-top: 1px solid $mid-grey;
+      list-style-position: inside;
+      padding: 0 0 1.5em;
+      counter-reset:li; /* Initiate a counter */
+
+  }
+  ol > li {
+      position:relative; /* Create a positioning context */
+      padding: 0.5em 0;
+      list-style:none; /* Disable the normal item numbering */
+      border-top: 1px solid $mid-grey;
+
+  }
+  ol > li:before {
+      content:counter(li); /* Use the counter as content */
+      counter-increment:li; /* Increment the counter by 1 */
+      
+     
+      font-size: 1.25em;
+      margin-right:0.75em;
+
+  }
+
+  li:last-child {
+    border-bottom: 1px solid $mid-grey;
+  }
+
+ 
+}

@@ -1,0 +1,129 @@
+---
+section: "residential"
+---
+<script type="text/javascript">
+    $(document).ready(function() {
+        // Define Vimeo player
+        var iframe = $('#intro-video')[0];
+        var player = $f(iframe);
+        // Hide video overlay and PLAY
+        $('.intro-video .video-box').click(function(event) {
+            $('.vimeo').addClass("hideAfter");
+            $('.video-box h2').fadeOut();
+            $('.video-box p').fadeOut();
+            player.api('play');
+            console.log("d")
+        });
+    });
+</script>
+
+<section class="magenta intro-video padding">
+    <div class="row">
+        <div class="small-10 small-centered columns end text-center">
+            <h2 class="white-type ">What’s in your power price?</h2>
+            <p class="white-type big">It takes more than just Powershop to get electricity to your property. There’s a whole supply chain and everyone’s responsible for doing their bit. And to do their bit they have to charge us (and ultimately you) to do it.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="small-12 medium-8 small-centered columns end video-box padding">
+            <div class="vimeo">
+                <div class='embed-container'>
+                    <iframe sandbox="allow-same-origin allow-scripts" id="intro-video" src='https://player.vimeo.com/video/156474855?title=0&amp;byline=0&amp;portrait=0' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                </div>
+            </div>
+            <div class="play-container">
+                <h2 class="text-center white-type">
+                    <img alt="" title="" class="play-btn" src="/assets/images/homes/play.min.svg" />
+                </h2>
+                <p class="text-center white-type"><span class="time">01:50</span></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="purple">
+    <div class="row text-center padding">
+        <div class="small-9 small-centered columns">
+            <ul class="inline-list text-center">
+                <li class="white-type"><a href="#whodoeswhat">Who does what?</a></li>
+                <li class="white-type"><a href="#whatyourpricemadeupof">What is your price made up of?</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section class="white">
+    <div class="row padding">
+        <div class="small-11 small-centered medium-10 columns end">
+            <h2 class="small-text-center" id="whodoeswhat">Who does what?</h2>
+            <div class="row padding">
+                <div class="small-12 small-centered medium-3 medium-uncentered columns text-center">
+                    <img alt="" title="" src="/assets/images/price-change/icon-generation.png" />
+                </div>
+                <div class="small-12 medium-9 columns small-text-center medium-text-left end">
+                    <h3>Generation (Wholesale Power)</h3>
+                    <p>From power stations throughout New Zealand, generating companies like Meridian Energy sell electricity on to retailers like us through the wholesale market.</p>
+                </div>
+            </div>
+            <div class="row padding">
+                <div class="small-12 small-centered medium-3 medium-uncentered columns text-center">
+                    <img alt="" title="" src="/assets/images/price-change/icon-transmission.png" />
+                </div>
+                <div class="small-12 medium-9 columns small-text-center medium-text-left end">
+                    <h3>Network: Transmission & Lines Companies</h3>
+                    <p>Transpower owns and operates the national grid and is responsible for the transmission of power from generators to the regional networks for distribution. Your local lines company (e.g. Vector) then distributes power to your property. The charges from lines companies include costs for both transmission and distribution.</p>
+                </div>
+            </div>
+            <div class="row padding">
+                <div class="small-12 small-centered medium-3 medium-uncentered columns text-center">
+                    <img alt="" title="" src="/assets/images/price-change/icon-metering.png" />
+                </div>
+                <div class="small-12 medium-9 columns small-text-center medium-text-left end">
+                    <h3>Metering Companies</h3>
+                    <p>There are heaps of different types of meters that measure how much power you’ve used. In New Zealand, meters are generally owned and managed by metering companies, and leased by retailers.</p>
+                </div>
+            </div>
+            <div class="row padding">
+                <div class="small-12 small-centered medium-3 medium-uncentered columns text-center">
+                    <img alt="" title="" src="/assets/images/price-change/icon-retail.png" />
+                </div>
+                <div class="small-12 medium-9 columns small-text-center medium-text-left end">
+                    <h3>Retailers like Powershop</h3>
+                    <p>Even though there’s no retailer quite like Powershop, we still buy wholesale power and sell it on to you. It’s just that Powershop adds in proper customer service, and loads of useful information and helpful tools.</p>
+                </div>
+            </div>
+            <div class="row padding">
+                <div class="small-12 small-centered medium-3 medium-uncentered columns text-center">
+                    <img alt="" title="" src="/assets/images/price-change/icon-govt.png" />
+                </div>
+                <div class="small-12 medium-9 columns small-text-center medium-text-left end">
+                    <h3>Government Agencies</h3>
+                    <p>The Electricity Authority is responsible for the regulation of the electricity industry. Policy and governance is managed by the New Zealand Government and several Crown entities. <br/>All retailers pay government levies to cover the cost of governance.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="light-grey">
+    <div class="row padding">
+        <div class="small-11 small-centered medium-10 columns end ">
+            <h2 id="whatyourpricemadeupof" class="text-center">What is your price made up of?</h2>
+            <div class="row">
+                <div class="small-12 small-centered columns end">
+                    <p>Your price reflects all the costs incurred by the various parties in the electricity supply chain. It varies between customers depending largely on factors like where you live and how much power you use.</p>
+                    <p>We keep a slice of what you pay us to cover our operating costs (like our friendly Customer Service Centre and the crew that work behind the scenes) and then we use the rest to pay for power from the generator, transmission and distribution charges from your local lines company, metering, GST and government levies. Here’s roughly how the money customers give us gets spent:</p>
+                </div>
+                <div class="text-center padding"><img alt="" title="" src="/assets/images/price-change/price-pie.png" /></div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="white">
+    <div class="row padding">
+        <div class="small-11 small-centered medium-10 columns end">
+            <h2 class="small-text-center" id="whodoeswhat">Why does your price change?</h2>
+            <p>Every year, everyone involved in the supply chain reviews their costs and decides what to charge power retailers like us. Changes in those charges often lead to movement in the prices paid by power users like you.</p>
+        </div>
+    </div>
+</section>
+
+<%= javascript_include_tag  "third-party/froogaloop.js" %>

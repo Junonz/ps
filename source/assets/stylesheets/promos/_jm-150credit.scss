@@ -1,0 +1,29 @@
+.jm-150credit, .power-polls-lead {
+    .main-menu {
+        display: none;
+    }
+    .promo-body {
+        margin-top: -46px;
+    }
+    .header-background img {
+        @include acrossResolution(width, 100%, 80%, 70%);
+        padding-bottom: 46px;
+        margin: 0 auto;
+        display: block;
+    }
+    .promo-body form a {
+        position: relative;
+        padding-right: 3em;
+    }
+    .arrow {
+        display: block;
+        width: 20px;
+        height: 36px;
+        position: absolute;
+        top: 11px;
+        right: 10px;
+    }
+    a.button.switch {
+        padding-right: 45px;
+    }
+}

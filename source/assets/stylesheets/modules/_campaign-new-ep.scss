@@ -1,0 +1,285 @@
+.campaign-new-ep {
+  position: relative;
+  z-index: 90;
+  @include acrossResolution("min-height",260px, 450px);
+  transition: height 0.8s ease;
+  .hero-video {
+    background: #D2CEC1 url(/assets/images/campaigns/campaign-new-ep/hero-60.jpg) center center no-repeat;
+    background-size: cover;
+    height: 100%;
+    min-height: inherit;
+    .row {
+      margin: auto;
+      height: 230px;
+      @include acrossResolution("position",relative, absolute);
+      @include acrossResolution("top",60px, 0);
+      @include acrossResolution("bottom",auto, 0);
+      @include acrossResolution("right",auto, 0);
+      @include acrossResolution("left",auto, 0);
+      transition: margin-top 0.8s ease, top 0.8s ease;
+    }
+  }
+  h2 {
+    @include acrossResolution("width",100%, 70% ,60%);
+    @media (min-width: 640px) and (max-width: 769px) {
+      width: 80%;
+    }
+    margin: 0 auto 15px auto;
+    display: block;
+    position: relative;
+  }
+  .hero-video .play {
+    width: 165px;
+    height: 50px;
+    margin: 0 auto;
+    a {
+      display: block;
+      border: 1px solid $pink;
+      border-radius: 25px;
+      width: 165px;
+      height: 50px;
+      background-color: rgba(255,255,255,0.7);
+      transition: background-color 0.2s;
+    }
+    svg {
+      width: 60%;
+      height: 50px;
+      position: relative;
+      fill: $pink;
+    }
+    span {
+      display: block;
+      color: $pink;
+    }
+    &:hover {
+      a {
+        background-color: $pink;
+      }
+      svg {
+        fill: $white;
+      }
+    }
+  }
+  .more-videos {
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    bottom: 0;
+    height: 63px;
+    transition: height 0.8s ease;
+    overflow: hidden;
+    @media #{$small-only} {
+      position: relative;
+      background-color: $darkest-grey;
+      bottom: 0;
+      height: auto;
+      min-height: 63px;
+    }
+    .intro {
+      cursor: pointer;
+      display: block;
+      padding: 20px 0;
+      margin-bottom: 0;
+    }
+    .the-videos {
+      overflow: auto;
+      text-align: center;
+      & > div {
+        width: 172px;
+        margin-bottom: 20px;
+        padding: 0;
+        display: inline-block;
+        float: none;
+        @media #{$small-only} {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+      & > div:nth-child(2) {
+        @include acrossResolution("margin-right",auto, 5%,100px);
+        @include acrossResolution("margin-left",auto, 5%,100px);
+      }
+      .wrapper {
+        display: table;
+        width: 100%;
+      }
+      p {
+        display: table-cell;
+        text-align: left;
+      }
+      p.time {
+        padding-left: 15px;
+        display: table-cell;
+        text-align: right;
+      }
+    }
+    .video-image {
+      width: 100%;
+      box-sizing: border-box;
+      margin-bottom: 15px;
+      border: 1px solid $white;
+      position: relative;
+      .play {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: 1px solid $pink;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        background-color: rgba(255,255,255,0.5);
+        display: block;
+        svg {
+          display: block;
+          fill: $pink;
+        }
+        &:hover {
+          background-color: $pink;
+          svg {
+            fill: $white;
+          }
+        }
+      }
+      img {
+        display: block;
+      }
+    }
+  }
+  .half-circle {
+    fill: $very-light-grey;
+  }
+}
+
+.better-deal {
+  h2 {
+    margin-bottom: 40px;
+  }
+  .the-offer {
+    width: 80%;
+    display: table;
+    table-layout: fixed;
+    & > div {
+      display: table-cell;
+      vertical-align: top;
+    }
+  }
+  .the-offer-copy {
+    width: 80%;
+    overflow: auto;
+    & > div {
+      float: left;
+    }
+  }
+  .the-offer, .the-offer-copy {
+    margin: 0 auto;
+    @media #{$medium-only} {
+      width: 100%;
+    }
+  }
+  .plus-icon {
+    width: 5%;
+    vertical-align: middle !important;
+    svg {
+      width: 100%;
+      min-width: 36px;
+      height: auto;
+      display: block;
+    }
+  }
+  .free-power, .free-power-copy {
+    width: 60%;
+    box-sizing: border-box;
+    padding: 0 30px;
+    @media #{$medium-only} {
+      padding: 0 15px;
+    }
+  }
+  .savings-guaranteed, .savings-guaranteed-copy {
+    width: 35%;
+    box-sizing: border-box;
+    padding: 0 30px;
+  }
+  .free-power, .savings-guaranteed {
+    img {
+      margin: 0 auto;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  .savings-guaranteed-copy {
+    float: right !important;
+  }
+  .the-offer-copy, .the-offer {
+    @media #{$small-only} {
+      margin-bottom: 20px;
+      & > div {
+        width: 100%;
+        float: none;
+        display: block;
+      }
+      .plus-icon {
+        width: 40px;
+        margin: 0 auto;
+        padding: 20px 0;
+      }
+    }
+  }
+  .switch-now {
+    color: $white;
+    display: inline-block;
+    background-color: $blue;
+    position: relative;
+    padding: 10px 50px 10px 30px;
+    transition: background-color 0.2s;
+    &:hover {
+      text-decoration: none;
+      background-color: $dark-blue;
+    }
+  }
+  .bt-arrow {
+    display: block;
+    width: 20px;
+    height: 36px;
+    position: absolute;
+    top: 5px;
+    right: 15px;
+  }
+  .arrow {
+    fill: $grey;
+  }
+  .half-circle {
+    fill: $light-grey;
+  }
+}
+
+.new-ep-modal, .hone-ep-modal, .peace-ep-modal, .springbok-ep-modal {
+  background-color: transparent;
+  .close-reveal-modal {
+    display: block;
+    position: relative;
+    color: $white;
+    text-align: right;
+    clear: both;
+    top: auto;
+    right: auto;
+    line-height: inherit;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  .vimeo {
+    width: 100%;
+    height: auto;
+    padding-bottom: 56.25%;
+    position: relative;
+    box-sizing: border-box;
+    border: 1px solid $white;
+  }
+  .vimeo iframe, .vimeo object, .vimeo embed {
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 80;
+  }
+}

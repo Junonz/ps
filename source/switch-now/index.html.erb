@@ -1,0 +1,94 @@
+---
+title: "Switch Utility Companies - Powershop, a better power company"
+---
+
+<section class="pink white-type">
+    <div class="row padding">
+        <div class="small-12 columns text-center">
+            <img src="/assets/images/switch-now/pencil-winky.png" />
+            <h1>Switch Now</h1>
+        </div>
+    </div>
+</section>
+
+<section class="what-you-need light-grey">
+    <div class="row padding">
+        <div class="small-12 medium-8 medium-offset-2 columns">
+            <h2 class="text-center">What you need</h2>
+            <ol>
+                <li>Your payment details (credit card or bank&nbsp;account).</li>
+                <li>A recent electricity bill (optional).</li>
+            </ol>
+            <p class="text-center"><a href="https://secure.powershop.co.nz/signup/" class="button">Start the switch</a></p>
+        </div>
+    </div>
+</section>
+
+<script>
+    $(document).ready(function() {
+        if ($.cookie('promo'))  {
+            var promo = $.cookie('promo');
+            $('#switch_now').load('/p/' + promo + '/' + promo + '-switch-now.html');
+        }
+    });
+</script>
+
+<section class="light-grey">
+    <div class="row padding">
+        <div class="small-12 medium-5 medium-offset-1 columns">
+            <h3>10-minute sign up</h3>
+            <p>Fill in your details online and leave the rest to us. We’ll contact your old supplier for you.</p>
+            <h3>60-day guarantee</h3>
+            <p>After sign-up, you have 60 days to let us know if you are happy. If not, we’ll hook you back up with your old power company and refund any unused power.</p>
+        </div>
+        <div class="small-12 medium-5 end columns">
+            <h3>Email updates</h3>
+            <p>Your switch is usually complete within 2-3 business days, and always within ten. We’ll send you progress updates via email.</p>
+            <h3>Sign up on the phone</h3>
+            <p>Signing up online is a breeze, but if you prefer to talk to a person, give us a call on 0800 1000 60 (free call).</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="row padding padding-bottom-last">
+        <div class="small-10 small-offset-1 columns">
+            <div class="questions-answered">
+                <h2 class="more">Top questions about switching</h2>
+                <p class="more"><a href="/questions-answered/"><small><em>More&nbsp;questions&nbsp;answered</em></small></a></p>
+                <div class='separation'>
+                    <h4 class='q'><img class="arrow-right" src="/assets/images/common/arrow-right.svg" /><a href="#">Can Powershop supply power to my property?</a></h4>
+                    <div class='a' style="display:none;">
+                        <p><a href='/supply-checker/'>Check here</a></p>
+                    </div>
+                </div>
+                <div class='separation'>
+                    <h4 class='q'><img class="arrow-right" src="/assets/images/common/arrow-right.svg" /><a href="#">Can you tell me more about the 60-day guarantee?</a></h4>
+                    <div class='a' style="display:none;">
+                        <p>Once you have switched to Powershop, you have 60 days to let us know if you are happy. If not, we will hook you back up with your old power company and refund any unused electricity.</p>
+                    </div>
+                </div>
+                <div class='separation'>
+                    <h4 class='q'><img class="arrow-right" src="/assets/images/common/arrow-right.svg" /><a href="#">What happens if I want to switch back to my old power company after the 60-day guarantee ends?</a></h4>
+                    <div class='a' style="display:none;">
+                        <p>If you decide to switch away after 60 days, refunds will only be given in certain circumstances. Read our refund policy <a href="/refunds/">here</a>.</p>
+                    </div>
+                </div>
+                <div class='separation'>
+                    <h4 class='q'><img class="arrow-right" src="/assets/images/common/arrow-right.svg" /><a href="#">Does it cost me anything to switch to or away from Powershop?</a></h4>
+                    <div class='a' style="display:none;">
+                        <p>No it doesn&rsquo;t, unless your property doesn&rsquo;t have an electricity supply and requires reconnection or connection to the electricity network. There are no fees for switching away from Powershop.</p>
+                    </div>
+                </div>
+                <div class='separation'>
+                    <h4 class='q'><img class="arrow-right" src="/assets/images/common/arrow-right.svg" /><a href="#">Is there any disruption to my power supply during the switching process?</a></h4>
+                    <div class='a' style="display:none;">
+                        <p>No, your power will not be cut off (unless your current supplier has already threatened disconnection because you haven&rsquo;t paid them). Switching to Powershop just involves the transfer of information from one company to another.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<%= javascript_include_tag  "third-party/jquery.cookie" %>

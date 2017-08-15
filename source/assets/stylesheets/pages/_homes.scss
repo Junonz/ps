@@ -1,0 +1,160 @@
+.index {
+  .how-ps-works {
+    img {
+      margin: 22px 0;
+    }
+    #pay, #usage, #specials {
+      margin: 20px auto 25px auto;
+    }
+    .btn-next {
+      .arrow {
+        fill: $mid-grey;
+      }
+      .half-circle {
+        fill: white;
+      }
+    }
+  }
+  .shop-view {
+    img {
+      margin-bottom: 20px;
+    }
+    h2 {
+      font-size: rem-calc(24);
+    }
+    .btn-next-mask .mask {
+      fill: $light-grey;
+    }
+  }
+  .give-us-spin {
+    h2 {
+      @media #{$large-up} {
+        padding-top: 70px;
+      }
+    }
+    .phone {
+      @media #{$small-only} {
+        padding-top: 70px;
+      }
+    }
+    .download-btn {
+      display: block;
+      margin-bottom: $paragraph-margin-bottom;
+    }
+    .btn-next {
+      .arrow {
+        fill: $dark-grey;
+      }
+      .half-circle {
+        fill: $light-grey;
+      }
+    }
+  }
+  .speak-to-person {
+    .girl img {
+      width: 100%;
+      max-width: 100%;
+    }
+    .consumer-logo svg {
+      max-width: 30%;
+    }
+    a.facebook, a.twitter, a.blog {
+      background: url('/assets/images/icons/icon-facebook.min.svg') left 2px no-repeat;
+      padding-left: 28px;
+      display: inline-block;
+      text-align: left;
+    }
+    a.blog {
+      background: url('/assets/images/icons/icon-blog.min.svg') left 2px no-repeat;
+    }
+    a.twitter {
+      background: url('/assets/images/icons/icon-twitter.min.svg') left 2px no-repeat;
+    }
+    .phone {
+      background: none;
+      padding: 0;
+      display: block;
+      text-align: center;
+      padding-bottom: $paragraph-margin-bottom*1.5;
+      @media #{$small-only} {
+        width: 80%;
+        margin: 0 auto $paragraph-margin-bottom auto;
+      }
+      span {
+        display: none;
+      }
+      &:after {
+        padding: 8px 0;
+        display: block;
+        margin: 0 auto;
+        content: url('/assets/images/homes/phone-and-icon-pink.min.svg');
+        fill: $pink;
+        @include acrossResolution(width, 227px, 394px, 399px);
+        @include acrossResolution(height, 30px, 55px, 60px);
+      }
+    }
+    .btn-next {
+      .arrow {
+        fill: $dark-grey;
+      }
+      .half-circle {
+        fill: $light-grey;
+      }
+    }
+  }
+  .two-colours {
+    h2 {
+      font-size: rem-calc(28);
+    }
+    svg {
+      max-width: 120px;
+      vertical-align: baseline;
+    }
+    @media #{$small-only} {
+      .purple, .magenta {
+        background-color: transparent;
+      }
+    }
+  }
+  .start-switch {
+    svg, #winky-chat {
+      max-width: 126px;
+    }
+    #winky-chat {
+      fill: $white;
+    }
+    .conteiner {
+      margin-bottom: $paragraph-margin-bottom;
+    }
+    a.button {
+      color: $white;
+      &:hover {
+        text-decoration: none;
+      }
+      &.phone {
+        background: none;
+        padding: 0;
+        display: block;
+        text-align: center;
+        @media #{$small-only} {
+          margin: 0 auto $paragraph-margin-bottom auto;
+        }
+        span {
+          display: none;
+        }
+        &:after {
+          padding: 8px 0;
+          display: block;
+          width: auto;
+          margin: 0 auto;
+          content: url('/assets/images/homes/phone-and-icon.min.svg');
+          @include acrossResolution(width, 227px, 394px, 295px);
+          @include acrossResolution(height, 42px, 55px, 60px);
+        }
+      }
+    }
+  }
+  .pink .deals a {
+    color: $blue;
+  }
+}

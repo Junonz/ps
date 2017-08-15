@@ -1,0 +1,204 @@
+
+.credit165 {
+    .main-menu {
+        display: none;
+    }
+    .promo-body {
+        margin-top: -46px;
+    }
+    .trumphead{background-color: #dee3e9;
+      -moz-box-shadow:    inset  0 -10px 30px -10px #ccc;
+      -webkit-box-shadow: inset  0 -10px 30px -10px #ccc;
+      box-shadow:        inset   0 -10px 30px -10px #ccc;
+      }
+    .header-background img {
+        @include acrossResolution(width, 100%, 80%, 70%);
+        padding-bottom: 46px;
+        margin: 0 auto;
+        display: block;
+    }
+    .arrow {
+        display: block;
+        width: 20px;
+        height: 36px;
+        position: absolute;
+        top: 11px;
+        right: 10px;
+    }
+    a.button.switch {
+        padding-right: 45px;
+    }
+
+  .header-background {
+    position: relative;
+    overflow: auto;
+    padding: 40px 0 40px 0;
+    overflow: hidden;
+    background-image: url(../images/campaigns/you-cant-lose/texture-2-top.png), url(../images/campaigns/you-cant-lose/texture-2-bottom.png);
+    background-position: right top, right bottom;
+    background-repeat: repeat-x;
+    background-size: 5px auto;
+    &:after {
+      width: 100%;
+      content: " ";
+      min-height: 250px;
+      position: absolute;
+      margin: auto;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+    }
+    h2 {
+      width: 100%;
+      height: 268px;
+      text-indent: -9000px;
+      overflow: hidden;
+      display: block;
+      margin: 0;
+      background: url(../images/campaigns/you-cant-lose/you-really-cant-lose.png) right calc( 50% + 360px) top -130px no-repeat;
+      background-size: 1000px auto;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 50;
+    }
+    @media #{$medium-up} {
+      min-height: 250px;
+      h2 {
+        background-size: 1600px auto;
+        background-position: calc( 50% - 570px) -225px;
+      }
+    }
+  }
+  .badges {
+    overflow: auto;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    svg {
+      width: 220px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    @media (min-width: 650px) {
+      width: 480px;
+      svg {
+        float: left;
+        margin-right: 10px;
+        margin-left: 10px;
+      }
+    }
+  }
+  .free-power-150 {
+    height: 46px;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    .number, .free-power {
+      fill: $pink;
+    }
+    .shadow {
+      fill: $light-grey;
+    }
+  }
+  .gs-badge {
+    height: 79px;
+    display: block;
+    .white {
+      fill: $white;
+    }
+    .grey {
+      fill: $grey;
+    }
+    .shadow {
+      fill: darken($pink, 10%);
+      display: none;
+    }
+    .box {
+      fill: $light-grey;
+    }
+  }
+  .vimeo {
+    margin: 50px auto;
+    position: relative;
+    @media #{$small-only} {
+      margin: 20px auto;
+    }
+    .embed-container {
+      @include acrossResolution(width, 284px, 400px, 600px);
+      @include acrossResolution(height, 158px, 223px, 334px);
+      margin: 0 auto;
+      position: relative;
+      cursor: pointer;
+
+      &.fade-background {
+        &:after {
+          opacity: 0;
+          display: none;
+        }
+      }
+    }
+    iframe {
+      @include acrossResolution(width, 284px, 400px, 600px);
+      @include acrossResolution(height, 158px, 223px, 334px);
+    }
+  }
+  .promo-body {
+    margin-top: -46px;
+    hr {
+      margin: 40px 0;
+    }
+    .padding {
+      padding-bottom: 0;
+    }
+    .titles {
+      line-height: 1.2em;
+    }
+    h3 {
+      margin-bottom: 35px;
+    }
+    form a {
+      position: relative;
+    }
+    .panel {
+      @media #{$small-only} {
+        margin-top: 20px;
+      }
+    }
+  }
+  #promo-form {
+    padding-bottom: 30px;
+    p {
+      font-size: 1.25em;
+    }
+  }
+  #sign_up_now {
+    margin-bottom: 0;
+  }
+  .ordered-list {
+    counter-reset: item;
+    margin: 0 0 35px 0;
+    display: block;
+    li {
+      text-align: left;
+      margin-bottom: 25px;
+      list-style: none;
+      display: block;
+      font-size: 1.2em;
+      &:before {
+        content: counter(item) ". ";
+        counter-increment: item;
+        color: $pink;
+        position: absolute;
+        left: -15px;
+        font-weight: bold;
+        @media #{$small-only} {
+          position: static;
+          left: 0;
+          padding-right: 5px;
+        }
+      }
+    }
+  }
+}

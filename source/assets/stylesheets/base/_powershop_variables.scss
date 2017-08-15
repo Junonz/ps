@@ -1,0 +1,33 @@
+// V A R I A B L E S
+
+$pink: #fa0e6a;
+$medium-pink: #e53a66;
+$magenta: #bc216b;
+$rose: #a41350;
+$light-magenta: lighten($magenta, 40%);
+$dark-magenta: darken($magenta, 7%);
+$purple: #662244;
+
+$blue: #0e91cf;
+$mid-blue: #449bd7;
+$light-blue: #afdffa;
+$very-light-blue: #e6f4fa;
+$promo-blue: #70cbe8;
+$dark-blue: darken($blue, 7%);
+$bigbill-blue: #97bbe0;
+
+$green: #b4ce49;
+
+$very-light-grey: #f5f5f5;// 5%
+$lightest-grey: #efefef;// 8% Used for: page background colour;
+$light-grey: #ececec;// 10%
+$mid-grey: #c2c2c2;// 30%
+$grey: #959595;// 50%
+$dark-grey: #7d7d7d;// 60%
+$very-dark-grey: #636363;// 70%
+$darkest-grey: #464646;// 80%
+
+$warning: $pink;
+
+$max-padding: 20px;
+$min-padding: 10px;

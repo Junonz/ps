@@ -1,0 +1,34 @@
+<section class="navigation row">
+  <div class="small-12 column end">
+    <% if current_page.data.section != 'none' %><div class="menu-mobile left"></div><% end %>
+    <h1 class="logo left"><a href="/">Powershop</a></h1>
+    <% if current_page.data.section != 'none' %>
+    <div class="main-menu">
+      <div class="channels">
+        <ul>
+          <li><span class="for">for</span></li>
+          <li class="homes <% if current_page.data.section == 'residential' %>active<% end %>"><a class="psui-homes" href="/">Homes</a></li>
+          <li class="business <% if current_page.data.section == 'business' %>active<% end %>"><a class="psui-business" href="/business">Business</a></li>
+        </ul>
+      </div>
+      <div class="page-links">
+        <ul style="<% if current_page.data.section == 'business' %>display:none;<% end %>">
+          <li class="<% if current_page.data.navigation == 'customers' %>active<% end %>"><a href="/our-customers">Our customers</a></li>
+          <li class="<% if current_page.data.navigation == 'prices' %>active<% end %>"><a href="/how-much-does-it-cost">Prices</a></li>
+          <li class="<% if current_page.data.navigation == 'questions' %>active<% end %>"><a href="/questions-answered">Questions?</a></li>
+        </ul>
+      </div>
+      <div class="buttons">
+        <ul>
+          <li class="login"><a class="" href="https://secure.powershop.co.nz/">Login</a></li>
+          <% if current_page.data.section == 'residential' %>
+            <li class="switch"><a class="" href="/150_Credit_SG_Homepage">Switch now</a></li>
+          <% else %>
+            <li class="switch"><a class="" href="/switch-now/">Switch now</a></li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+    <% end %>
+  </div>
+</section>

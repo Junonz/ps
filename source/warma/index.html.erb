@@ -1,0 +1,104 @@
+---
+title: "Credit - Powershop, a better power company"
+section: "residential"
+promotionID: "890"
+promotionName: "Always on - Warm (890)"
+customClass: "promo-aoa"
+openTermsAndConditionsInNewPage: "yes"
+---
+
+<section class="header white-type text-center land2a">
+  <h2 class="margin-zero">You really can't lose with powershop</h2>
+</section>
+
+<div class="light-grey">
+  <div class="row">
+    <div class="small-12 small-centered medium-11 columns end white offset-container">
+      <section class="padding">
+        <div class="row text-center">
+          <div class="small-11 small-centered medium-10 columns end ">
+            <h2 class="pink-type">Pay for power on the go, as you go</h2>
+            <div class="aoa-round2"></div>
+            <h3>With Powershop you choose when, where and how you pay for power</h3>
+            <ul class="list">
+              <li>Buy power online, or on the go with our mobile app.</li>
+              <li>Pay in advance, pay as you go, or set and forget.</li>
+              <li>Flexible payments - choose a date that fits in with your budget.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="depoiment">
+        <div class="row text-center">
+          <div class="small-11 small-centered medium-10 columns end ">
+            <h3 class="pink-type margin-zero">"I will never go back to waiting for the dreaded monthly power bill."</h3>
+            <p class="big margin-zero">- Trish, Selwyn</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="row text-center">
+          <div class="small-11 small-centered medium-10 columns end padding-bottom-last">
+            <h3>Switch to a better power deal</h3>
+            <div class="free-power-and-sg">
+              <div class="free-power"><%= partial "assets/images/promos/aoa/150-credit.svg" %></div>
+              <div class="plus-icon"><%= partial "assets/images/promos/aoa/plus.svg" %></div>
+              <div class="sg-badge"><%= partial "assets/images/promos/aoa/sg-badge.svg" %></div>
+            </div>
+            <p>When you switch your main home to Powershop we’ll give you $150 free power, spread over your first three months. We also guarantee to save you money in your first year compared to your old power company.</p>
+            <div class="vimeo">
+              <div class='embed-container'>
+                <h3>See how Guaranteed Savings work</h3>
+                <img alt="" title="" class="play-btn" src="/assets/images/homes/play.min.svg" />
+                <div class="time">1:17</div>
+                <iframe sandbox="allow-same-origin allow-scripts" id="intro-video" src='https://player.vimeo.com/video/151571681?title=0&amp;byline=0&amp;portrait=0' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+              </div>
+            </div>
+            <p>To get your Guaranteed Savings, you’ll need to send us a recent bill from your old power company. We’ll ask you for this later</p>
+            <%= partial "shared/mm_mobile_call_us" %>
+            <%= partial "shared/switch_now" %>
+            <%= partial "terms-and-conditions" %>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+</div>
+
+<section class="light-grey">
+  <div class="row padding-bottom-last">
+  <div class="small-12 small-centered medium-12 columns end">
+    <div class="padding">
+      <%= partial "shared/got_questions" %>
+      <%= partial "shared/well_get_in_touch" %>
+      <%= partial "shared/live_help_now" %>
+    </div>
+  </div>
+  </div>
+</section>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    var cookie = readCookie("questionsOpen");
+    if (cookie === "yes") {
+      $('#got-questions').show();
+    }
+    // Define Vimeo player
+    var iframe = $('#intro-video')[0];
+    var player = $f(iframe);
+    $('.vimeo .embed-container').click(function(event) {
+      $(".embed-container").addClass("fade-background");
+      $('.vimeo h3').fadeOut();
+      $('.vimeo .play-btn').fadeOut();
+      $('.vimeo .time').fadeOut();
+      player.api('play');
+    });
+    $('#got-questions-link').click(function(){
+      createCookie("questionsOpen", "yes", 1);
+    })
+  });
+</script>
+<script src="/assets/javascripts/third-party/froogaloop.js" type="text/javascript"></script>

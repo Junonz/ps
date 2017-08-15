@@ -1,0 +1,15 @@
+.rapa {
+  .header {
+    background-attachment: scroll, scroll;
+    background-clip: border-box, border-box;
+    background-image: url("../images/promos/rapa/rapa.png");
+    background-origin: padding-box, padding-box;
+    background-position: center top -28px, center center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto 100%;
+    background-color: $pink;
+  }
+
+  #spacer{padding-bottom:20px}
+
+}

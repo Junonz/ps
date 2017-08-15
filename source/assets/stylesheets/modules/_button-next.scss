@@ -1,0 +1,42 @@
+.btn-next, .btn-next-mask {
+  position: relative;
+  z-index: 20;
+  bottom: -20px;
+  overflow: auto;
+  height: 40px;
+  display: block;
+  .arrow, .half-circle {
+    display: block;
+    margin: 0 auto;
+    height: 18px;
+  }
+  .arrow {
+    width: 28px;
+    fill: white;
+    position: relative;
+    top: 3px;
+  }
+  .half-circle {
+    width: 48px;
+  }
+}
+.btn-next-mask {
+  width: 100%;
+  height: 50px;
+  bottom: -30px;
+  overflow: hidden;
+  bottom: -1px;
+  .mask {
+    fill: $white;
+    position: absolute;
+    left: -9999px;
+    right: -9999px;
+    margin: auto;
+    height: 30px;
+    width: 5000px;
+    max-width: none;
+    z-index: 5;
+    top: auto;
+    bottom: 0;
+  }
+}

@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".questions-answered .q a").click(function(e){e.preventDefault(),$(this).parent().next().slideToggle("fast"),$(this).parent().children("img").toggleClass("arrow-down")}),$("#got-questions-link").click(function(e){e.preventDefault(),$("#got-questions").slideToggle(500)})});

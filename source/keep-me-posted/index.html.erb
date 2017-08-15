@@ -1,0 +1,84 @@
+---
+title: "Keep me posted - Powershop, a better power company"
+section: "residential"
+---
+
+<section class="magenta">
+    <div class="row padding">
+        <div class="small-12 columns end">
+            <h1 class="white-type">Keep Me Posted</h1>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="row padding padding-bottom-last">
+        <div class="small-12 columns end">
+            <div class="row" id="keep_me_posted_enter_details">
+                <div class="small-12 columns end">
+                    <h4>Fill out your details below to find out more about Powershop and register to receive email updates about our service and when we'll be in your area. You can unsubscribe at any time. </h4>
+                </div>
+                <div class="small-12 medium-8 medium-offset-4 columns">
+                    <form id="keep-me-posted-content" method="post" action="/contact_us/create">
+                        <fieldset>
+                            <!-- Errors -->
+                            <div id="keep-posted-error" style="display:none">
+                                <h4>Errors:</h4>
+                                <div style="margin-bottom: 20px" class="pink-type"></div>
+                            </div>
+                            <label for="keep_me_posted_address_region">Select your region <span class="pink-type">*</span></label>
+                            <select id="keep_me_posted_address_region" name="address[region]">
+                                <option value="" selected="selected">Select a Region</option>
+                            </select>
+                            <label for="keep_me_posted_address_district">Select your district <span class="pink-type">*</span></label>
+                            <select id="keep_me_posted_address_district" name="address[district]">
+                                <option value="" selected="selected">Select a District</option>
+                            </select>
+                            <label for="keep_me_posted_address_suburb">Select your suburb <span class="pink-type">*</span></label>
+                            <select id="keep_me_posted_address_suburb" name="address[suburb]">
+                                <option value="" selected="selected">Select a Suburb</option>
+                            </select>
+                            <br />
+                            <label for="keep_me_posted_street">Street name <span class="pink-type">*</span></label>
+                            <input id="keep_me_posted_street" type="text" name="address[address3]" />
+                            <br />
+                            <label for="keep_me_posted_house">House number <span class="pink-type">*</span></label>
+                            <input id="keep_me_posted_house" type="text" name="address[address2]" class="Short" />
+                            <br />
+                            <label for="keep_me_posted_flat">Flat number</label>
+                            <input type="text" id="keep_me_posted_flat" name="address[address1]" class="Short" />
+                            <div class="horizontal-line light-grey"></div>
+                            <label for="keep_me_posted_name">Name <span class="pink-type">*</span></label>
+                            <input type="text" id="keep_me_posted_name" name="name" class="Short" />
+                            <br />
+                            <label for="keep_me_posted_email">Email <span class="pink-type">*</span></label>
+                            <input type="text" id="keep_me_posted_email" name="email" class="Short" />
+                            <br />
+                            <input type="checkbox" id="keep_me_posted_myarea" name="powershop_in_area_notification" class="check" value="true" checked />
+                            <label for="keep_me_posted_myarea">Email me when Powershop is in my area</label>
+                            <div>&nbsp;</div>
+                            <!--
+                            <p>And, if you have a copy of a recent bill, enter your ICP number and we'll confirm if we can supply your property.</p>
+                            <label for="keep_me_posted_icp_number">ICP number</label>
+                            <input type="text" id="keep_me_posted_icp_number" name="icp_number" />
+                            -->
+                            <div class="st-wid-6 st-pos-4 cm-wid-5 cm-pos-5 ph-wid-12 ph-pos-0 clear continue">
+                                <p><a href="javascript:keepMePosted.submit(); void(0)" class="button switch">Continue</a></p>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+            <div class="row" id="keep_me_posted_success" style="display:none">
+                <div class="small-12 columns end">
+                    <h2>Thanks!</h2>
+                    <p>We'd be delighted to keep you posted on Powershop's news, but remember at anytime you can also pop back in and have a look around the website itself.</p>
+                    <p>We have retained your email address and will send you the notifications you have subscribed to, telling you when we are in your area, and our latest news.</p>
+                    <p>If you would prefer that we didn't do this please <a href="/contact-us/">contact us</a> and let us know. You can also unsubscribe at any time by clicking the unsubscribe link at the bottom of any Powershop update email you receive.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<%= javascript_include_tag  "../integration/areas.js", "modules/supply_checker.js" %>

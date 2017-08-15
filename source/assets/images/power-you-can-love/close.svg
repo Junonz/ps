@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28">
+  <title>Close</title>
+  <circle class="cls-1" cx="14" cy="14" r="14"/>
+  <g>
+    <line class="cls-2" x1="7.34" y1="7.34" x2="20.66" y2="20.66"/>
+    <line class="cls-2" x1="20.66" y1="7.34" x2="7.34" y2="20.66"/>
+  </g>
+</svg>

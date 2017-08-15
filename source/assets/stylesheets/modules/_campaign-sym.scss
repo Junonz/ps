@@ -1,0 +1,205 @@
+.campaign-sym { padding-top: 0 !important;
+  @media (min-width: 1px) {
+    .green-beard {
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: 30px;
+      display: block;
+      .the-guy {
+        display: none;
+      }
+    }
+
+    .free-power-150 {
+      width: 213px;
+      height: 45px;
+      display: block;
+      margin: 0 auto 15px auto;
+      .number, .free-power {
+        fill: $white;
+      }
+      .shadow {
+        fill: darken($pink, 10%);
+      }
+    }
+    .gs-badge {
+      width: 240px;
+      height: 86px;
+      display: block;
+      margin: 0 auto 40px auto;
+      .white {
+        fill: $white;
+      }
+      .grey {
+        fill: $grey;
+      }
+      .shadow {
+        fill: darken($pink, 10%);
+      }
+    }
+
+    .pink {
+      text-align: center;
+      background-position: left bottom ;
+      background-size: 5px auto;
+      h3 {
+        font-size: 1.15rem;
+        padding: 40px 20px 20px 20px;
+        margin-bottom: 20px;
+        font-weight: 300;
+      }
+    }
+    
+    .button {
+      color: $white;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-size: 1rem;
+      position: relative;
+      padding-right: 45px;
+      &::after {
+        width: 20px;
+        height: 20px;
+        content: " ";
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 2px;
+        bottom: 0;
+        margin: auto;
+        background: url('../images/campaigns/sym/arrow.min.svg') 0 0 no-repeat;
+      }
+    }
+  }
+
+/* mobile size */
+  @media (min-width: 200px){
+    .magenta {
+      background-color: #702B89;
+      background-size: 900px auto;
+      background-position: left bottom ;
+      height: 100%;
+      background-repeat: no-repeat;
+    }
+    .sym-badge {
+      width:50%;
+    }
+  }
+  @media (min-width: 510px) {
+    .green-beard {
+      right: 0;
+      left: 0;
+      margin: auto;
+      background-color: $light-blue;
+    }
+    .pink h3 {
+      padding-right: 80px;
+      padding-left: 80px;
+    }
+  }
+
+  /* tablet size */
+
+  @media (min-width: 650px) {
+    .magenta {
+      background-color: $light-blue;
+      background-image: url("../images/campaigns/sym/sym-bg.png");
+      background-position: left bottom ;
+      height: 100%;
+      background-repeat: no-repeat;
+    }
+
+    .pink  {
+      div {
+        width: 500px;
+        margin: 0 auto;
+        overflow: auto;
+        clear: both;
+      }
+      svg {
+        float: left;
+      }
+    }
+    .free-power-150 {
+      margin-top: 20px;
+      margin-right: 15px;
+    }
+    .gs-badge {
+      margin-left: 15px;
+    }
+  }
+  @media (min-width: 768px) {
+    .green-beard {
+      right: 0;
+      margin: auto;
+      left: 0;
+    }
+  }
+
+  @media (min-width: 960px) {
+    position: relative;
+    overflow: auto;
+    padding-top: 0!important;
+    background-color: $light-blue;
+    background-image: url("../images/campaigns/sym/sym-bg.png");
+    background-position: center bottom;
+    background-repeat: repeat-x;
+    background-size: 2300px auto;
+
+    .container {
+      max-width: 80em;
+      margin: 0 auto;
+      overflow: auto;
+    }
+
+    .container-grey{
+      width: 100%;
+      margin: 0 auto;
+      overflow: auto;
+    }
+
+    .green-beard {
+      width: 475px;
+      height: 60%;
+      right: 10px;
+      margin: 0;
+      left: auto;
+      .the-guy {
+        display: block;
+      }
+    }
+    .pink, .magenta {
+      float: left;
+    }
+    .magenta {
+      width: 70%;
+      height: 435px;
+      background: none;
+    }
+    .pink {
+      width: 30%;
+      height: 435px;
+      position: relative;
+      z-index: 50;
+      h3 {
+        padding: 40px 20px;
+        margin-bottom: 0;
+      }
+      div {
+        width: auto;
+      }
+      svg {
+        float: none;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 0;
+      }
+    }
+    .button {
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,120 @@
+.campaign-250 {
+  min-height: 420px;
+  .cold {}
+  .hot, .cold {
+    background: #5abbe4 url(/assets/images/campaigns/campaign-250/snow.jpg) center center repeat;
+    height: 420px;
+    background-size: auto 420px;
+    position: relative;
+    .snowman {
+      width: 100%;
+      height: inherit;
+      background: url(/assets/images/campaigns/campaign-250/snowman.jpg) center center no-repeat;
+      background-size: auto 420px;
+      @include acrossResolution(background-position, 0 0 , calc(50% - 235px) 0, calc(50% - 360px) 0);
+      @media #{$small-only} {
+        background: none;
+      }
+      &:after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 420px;
+        top: 0;
+        left: 0;
+        position: absolute;
+        background: url(/assets/images/campaigns/campaign-250/circles.png) center center no-repeat;
+        background-size: auto 100%;
+        @include acrossResolution(background-position, center center , calc(50% - 235px) 0, calc(50% - 360px) 0);
+      }
+    }
+    .free-power {
+      width: 100%;
+      height: inherit;
+      background: url(/assets/images/campaigns/campaign-250/250-hot-mobile.png) center bottom no-repeat;
+      background-size: auto 90%;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin: auto;
+      position: absolute;
+      @media #{$medium-up} {
+        background: url(/assets/images/campaigns/campaign-250/250-hot.png) center bottom no-repeat;
+        background-size: auto 90%;
+        right: 0;
+        left: auto;
+        margin: 0;
+      }
+      @include acrossResolution(background-position, calc(50%) bottom , calc(50% + 300px) bottom, calc(50% + 400px) bottom);
+      h2 {
+        width: 258px;
+        height: 55px;
+        background: url(/assets/images/campaigns/campaign-250/tag-hot.png) center center no-repeat;
+        background-size: 100% auto;
+        position: absolute;
+        top: 30px;
+        @include acrossResolution(left, 0, auto);
+        @include acrossResolution(right, 0, calc(50% - 275px), calc(50% - 375px));
+        margin: auto;
+        overflow: hidden;
+        text-indent: -9000px;
+        @media #{$small-only} {
+          top: 5px;
+          background-size: 80% auto;
+        }
+      }
+      p {
+        display: none;
+      }
+      .switch-now {
+        text-transform: uppercase;
+        padding: 16px 34px 16px 16px;
+        color: $white;
+        font-weight: 300;
+        position: absolute;
+        font-size: 16px;
+        bottom: 12px;
+        display: block;
+        margin: 0;
+        line-height: 1em;
+        @include acrossResolution (right, calc(50% - 73px), calc(50% - 225px), calc(50% - 340px));
+        &:hover {
+          text-decoration: none;
+        }
+        @media #{$small-only} {
+          bottom: 8px;
+        }
+        .arrow {
+          display: block;
+          width: 20px;
+          height: 36px;
+          position: absolute;
+          top: 7px;
+          right: 9px;
+        }
+      }
+    }
+  }
+  .cold {
+    background-image: url(/assets/images/campaigns/campaign-250/snow-pink.jpg);
+    background-color: #ff62a7;
+    .snowman {
+      background-image: url(/assets/images/campaigns/campaign-250/snowman-pink.jpg);
+      @media #{$small-only} {
+        background: none;
+      }
+      &:after {
+        background-image: url(/assets/images/campaigns/campaign-250/circles-pink.png);
+      }
+    }
+    .free-power {
+      background-image: url(/assets/images/campaigns/campaign-250/250-cold-mobile.png);
+      @media #{$medium-up} {
+        background-image: url(/assets/images/campaigns/campaign-250/250-cold.png);
+      }
+      h2 {
+        background-image: url(/assets/images/campaigns/campaign-250/tag-cold.png);
+      }
+    }
+  }
+}
