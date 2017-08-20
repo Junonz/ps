@@ -20,7 +20,6 @@
 // Relatively complex, distinct sections of an interface
 @import "modules/navigation";
 @import "modules/power-you-can-love";
-@import "modules/homepage-banner";
 @import "modules/reveal-modal";
 @import "modules/deals";
 @import "modules/button-next";
@@ -51,8 +50,6 @@
 
 // Import Campaign Styles
 @import "modules/campaign-you-cant-lose";
-@import "modules/campaign-sym.scss";
-@import "modules/campaign-grey-banner.scss";
 
 // Import Promo Pages Styles
 @import "promos/150credit";
