@@ -1,0 +1,112 @@
+---
+title: "Credit - Powershop, a better power company"
+section: "residential"
+promotionID: "1104"
+promotionName: "Always on - Warm (1104)"
+customClass: "ga"
+openTermsAndConditionsInNewPage: "yes"
+---
+
+<section class="header land-ga white-type text-center">
+  <h2 class="margin-zero">You really can't lose with powershop</h2>
+</section>
+
+<div class="light-grey">
+  <div class="row">
+    <div class="small-12 small-centered medium-11 columns end white offset-container">
+      <section class="padding">
+        <div class="row text-center">
+          <div class="small-12 small-centered medium-10 columns end ">
+            <h2 class="pink-type">Get a better power deal. Switch to a better power company.</h2>
+            <h3>Sign up your main home to Powershop</h3>
+          </div>
+        </div>
+      </section>
+    <section>
+      <div class="row">
+          <div class="small-11 small-centered columns">
+            <div class="large-6 columns">
+              <%= partial "assets/images/promos/ga/left.svg" %>
+            </div>
+            <div class="large-6 columns" style="text-align:center;padding-top:30px;padding-bottom:0">
+              <p><b>Take control over your power...</b></p>
+              <p>
+                <ul class="list">
+                <li>Buy power online – no more bills in the post.</li>
+                <li>Save with regular discounted specials.</li>
+                <li>Track your usage with our mobile app.</li>
+                <li>No fixed term contracts – we won’t lock you in.</li>
+              </ul>
+            </p>
+            <div>
+              <%= partial "shared/mm_mobile_call_us" %>
+              <%= partial "shared/sign_up" %>
+              <%= partial "terms-and-conditions" %>
+            </div>
+            </div>
+          </div>
+      </div>
+    </section>
+
+      <section class="depoiment">
+        <div class="row text-center">
+        </div>
+      </section>
+
+      <section>
+        <div class="row text-center">
+          <div class="small-11 small-centered medium-10 columns end padding-bottom-last">
+            <hr>
+            <h3>Why Powershop is a better power company</h3>
+            <p>Powershop is an online power company that puts you in control and saves you money.
+              What’s more, an independent survey has rated our residential customer satisfaction at
+              an average of over 90% for the past 8 years. For a power company, that’s way above average.
+              Join us and you really can’t lose – we guarantee to save you money in your first year compared
+              to your old power company.
+            </p>
+          <div class="row">
+              <div style="background:#ebebeb;padding-top:10px;margin-bottom:40px" class="small-11 small-centered columns">
+                <%= partial "assets/images/promos/ga/centre.svg" %>
+              </div>
+          </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+
+<section class="light-grey">
+  <div class="row padding-bottom-last">
+  <div class="small-12 small-centered medium-12 columns end">
+    <div class="padding">
+      <%= partial "shared/got_questions" %>
+      <%= partial "shared/well_get_in_touch" %>
+      <%= partial "shared/live_help_now" %>
+    </div>
+  </div>
+  </div>
+</section>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    var cookie = readCookie("questionsOpen");
+    if (cookie === "yes") {
+      $('#got-questions').show();
+    }
+    // Define Vimeo player
+    var iframe = $('#intro-video')[0];
+    var player = $f(iframe);
+    $('.vimeo .embed-container').click(function(event) {
+      $(".embed-container").addClass("fade-background");
+      $('.vimeo h3').fadeOut();
+      $('.vimeo .play-btn').fadeOut();
+      $('.vimeo .time').fadeOut();
+      player.api('play');
+    });
+    $('#got-questions-link').click(function(){
+      createCookie("questionsOpen", "yes", 1);
+    })
+  });
+</script>
+<script src="/assets/javascripts/third-party/froogaloop.js" type="text/javascript"></script>

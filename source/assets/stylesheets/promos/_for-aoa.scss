@@ -1,9 +1,8 @@
 .promo-aoa {
-
-  .header {
+.header {
     min-height: 280px;
     @media #{$small-only} {
-      min-height: 150px;
+    min-height: 150px;
     }
     &.cold {
       background: url("../images/promos/aoa/you-really-cant-lose.png") center -120px no-repeat, url("../images/promos/aoa/lines.png") center center repeat;

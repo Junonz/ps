@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-
-
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd
+    http://www.w3.org/1999/xhtml http://www.w3.org/2002/08/xhtml/xhtml1-strict.xsd"
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xhtml="http://www.w3.org/1999/xhtml"
+    >
 <url>
   <loc>http://www.powershop.co.nz/</loc>
+  <xhtml:link rel="alternate" hreflang="en-nz" href="http://www.powershop.co.nz/" />
+  <xhtml:link rel="alternate" hreflang="en-gb" href="http://www.powershop.co.uk/" />
+  <xhtml:link rel="alternate" hreflang="en-au" href="http://www.powershop.com.au/" />
+  <xhtml:link rel="alternate" hreflang="en" href="http://powershop.com/" />
   <lastmod>2013-05-09T03:03:27+00:00</lastmod>
   <changefreq>weekly</changefreq>
   <priority>1.00</priority>
@@ -20,36 +24,55 @@
 </url>
 <url>
   <loc>http://www.powershop.co.nz/questions-answered/</loc>
+  <xhtml:link rel="alternate" hreflang="en-nz" href="http://www.powershop.co.nz/questions-answered/" />
+  <xhtml:link rel="alternate" hreflang="en-gb" href="http://www.powershop.co.uk/questions/switching-and-moving/can-i-switch-to-powershop/" />
+  <xhtml:link rel="alternate" hreflang="en-au" href="http://www.powershop.com.au/questions-answered/" />
   <lastmod>2013-05-09T03:03:27+00:00</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.70</priority>
 </url>
 <url>
   <loc>http://www.powershop.co.nz/switch-now/</loc>
+  <xhtml:link rel="alternate" hreflang="en-nz" href="http://www.powershop.co.nz/switch-now" />
+  <xhtml:link rel="alternate" hreflang="en-gb" href="http://www.powershop.co.uk/questions/switching-and-moving/switching-to-powershop/" />
+  <xhtml:link rel="alternate" hreflang="en-au" href="http://www.powershop.com.au/switch-now/" />
   <lastmod>2013-05-09T03:03:27+00:00</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://www.powershop.co.nz/toolkit/</loc>
+  <xhtml:link rel="alternate" hreflang="en-nz" href="http://www.powershop.co.nz/toolkit/" />
+  <xhtml:link rel="alternate" hreflang="en-gb" href="http://www.powershop.co.uk/questions/using-powershop/powerpacks/" />
+  <xhtml:link rel="alternate" hreflang="en-au" href="http://www.powershop.com.au/toolkit/" />
   <lastmod>2013-05-09T03:03:27+00:00</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://www.powershop.co.nz/how-much-does-it-cost/</loc>
+  <xhtml:link rel="alternate" hreflang="en-nz" href="http://www.powershop.co.nz/how-much-does-it-cost" />
+  <xhtml:link rel="alternate" hreflang="en-gb" href="http://www.powershop.co.uk/get-a-quote" />
+  <xhtml:link rel="alternate" hreflang="en-au" href="http://www.powershop.com.au/how-much-does-it-cost/" />
   <lastmod>2013-05-09T03:03:27+00:00</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://www.powershop.co.nz/contact-us/</loc>
+  <xhtml:link rel="alternate" hreflang="en-nz" href="http://www.powershop.co.nz/contact-us" />
+  <xhtml:link rel="alternate" hreflang="en-gb" href="http://www.powershop.co.uk/contact-us" />
+  <xhtml:link rel="alternate" hreflang="en-au" href="http://www.powershop.com.au/contact-us/" />
+  <xhtml:link rel="alternate" hreflang="en" href="http://powershop.com/contact/" />
   <lastmod>2013-05-09T03:03:27+00:00</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.70</priority>
 </url>
 <url>
   <loc>http://www.powershop.co.nz/moving-house/</loc>
+  <xhtml:link rel="alternate" hreflang="en-nz" href="http://www.powershop.co.nz/moving-house/" />
+  <xhtml:link rel="alternate" hreflang="en-gb" href="http://www.powershop.co.uk/moving-house" />
+  <xhtml:link rel="alternate" hreflang="en-au" href="http://www.powershop.com.au/moving-house/" />
   <lastmod>2013-05-09T03:03:27+00:00</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.50</priority>
@@ -62,6 +85,9 @@
 </url>
 <url>
   <loc>http://www.powershop.co.nz/sitemap/</loc>
+  <xhtml:link rel="alternate" hreflang="en-nz" href="http://www.powershop.co.nz/sitemap/" />
+  <xhtml:link rel="alternate" hreflang="en-gb" href="http://www.powershop.co.uk/sitemap" />
+  <xhtml:link rel="alternate" hreflang="en-au" href="http://www.powershop.com.au/sitemap/" />
   <lastmod>2013-05-09T03:03:27+00:00</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.50</priority>
@@ -74,42 +100,65 @@
 </url>
 <url>
   <loc>http://www.powershop.co.nz/about-us/</loc>
+  <xhtml:link rel="alternate" hreflang="en-nz" href="http://www.powershop.co.nz/about-us/" />
+  <xhtml:link rel="alternate" hreflang="en-gb" href="http://www.powershop.co.uk/about-powershop/" />
+  <xhtml:link rel="alternate" hreflang="en-au" href="http://www.powershop.com.au/about-us/" />
   <lastmod>2013-05-09T03:03:27+00:00</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.50</priority>
 </url>
 <url>
   <loc>http://www.powershop.co.nz/privacy-policy/</loc>
+  <xhtml:link rel="alternate" hreflang="en-nz" href="http://www.powershop.co.nz/privacy-policy" />
+  <xhtml:link rel="alternate" hreflang="en-gb" href="http://www.powershop.co.uk/privacy-policy" />
+  <xhtml:link rel="alternate" hreflang="en-au" href="http://www.powershop.com.au/privacy-policy/" />
+  <xhtml:link rel="alternate" hreflang="en" href="http://powershop.com/privacy/" />
   <lastmod>2013-05-09T03:03:27+00:00</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.50</priority>
 </url>
 <url>
   <loc>http://www.powershop.co.nz/terms-and-conditions/</loc>
+  <xhtml:link rel="alternate" hreflang="en-nz" href="http://www.powershop.co.nz/terms-and-conditions/" />
+  <xhtml:link rel="alternate" hreflang="en-gb" href="http://www.powershop.co.uk/terms-and-conditions" />
+  <xhtml:link rel="alternate" hreflang="en-au" href="http://www.powershop.com.au/terms-and-conditions/customer/" />
+  <xhtml:link rel="alternate" hreflang="en" href="http://powershop.com/terms-and-conditions/" />
   <lastmod>2013-05-09T03:03:27+00:00</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.50</priority>
 </url>
 <url>
   <loc>http://www.powershop.co.nz/fees/</loc>
+  <xhtml:link rel="alternate" hreflang="en-nz" href="http://www.powershop.co.nz/fees/" />
+  <xhtml:link rel="alternate" hreflang="en-gb" href="http://www.powershop.co.uk/fees/" />
+  <xhtml:link rel="alternate" hreflang="en-au" href="http://www.powershop.com.au/fees/" />
   <lastmod>2013-05-09T03:03:27+00:00</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.50</priority>
 </url>
 <url>
   <loc>http://www.powershop.co.nz/refunds/</loc>
+  <xhtml:link rel="alternate" hreflang="en-nz" href="http://www.powershop.co.nz/refunds/" />
+  <xhtml:link rel="alternate" hreflang="en-gb" href="http://www.powershop.co.uk/refunds-policy/" />
+  <xhtml:link rel="alternate" hreflang="en-au" href="http://www.powershop.com.au/refunds/" />
   <lastmod>2013-05-09T03:03:27+00:00</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.50</priority>
 </url>
 <url>
   <loc>http://www.powershop.co.nz/mobile-apps/</loc>
+  <xhtml:link rel="alternate" hreflang="en-nz" href="http://www.powershop.co.nz/mobile-apps/" />
+  <xhtml:link rel="alternate" hreflang="en-gb" href="http://www.powershop.co.uk/powershop-in-your-pocket/" />
+  <xhtml:link rel="alternate" hreflang="en-au" href="http://www.powershop.com.au/mobile-apps/" />
   <lastmod>2013-05-09T03:03:27+00:00</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.50</priority>
 </url>
 <url>
   <loc>http://www.powershop.co.nz/complaints/</loc>
+  <xhtml:link rel="alternate" hreflang="en-nz" href="http://www.powershop.co.nz/complaints/" />
+  <xhtml:link rel="alternate" hreflang="en-gb" href="http://www.powershop.co.uk/complaints" />
+  <xhtml:link rel="alternate" hreflang="en-au" href="http://www.powershop.com.au/complaints/" />
   <lastmod>2013-05-09T03:03:27+00:00</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.50</priority>
@@ -122,6 +171,9 @@
 </url>
 <url>
   <loc>http://www.powershop.co.nz/terms-and-conditions/website/</loc>
+  <xhtml:link rel="alternate" hreflang="en-nz" href="http://www.powershop.co.nz/terms-and-conditions/website/" />
+  <xhtml:link rel="alternate" hreflang="en-gb" href="http://www.powershop.co.uk/website-terms-of-use/" />
+  <xhtml:link rel="alternate" hreflang="en-au" href="http://www.powershop.com.au/terms-and-conditions/website/" />
   <lastmod>2014-03-23T03:03:27+00:00</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.5</priority>

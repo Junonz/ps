@@ -1,0 +1,67 @@
+---
+title: "Credit - Powershop, a better power company"
+section: "residential"
+promotionName: "You can't really lose ()"
+customClass: "sym"
+---
+
+<section class="header white-type text-center sym">
+  <h2 class="margin-zero">Bring your mates on the Powershop ride to win</h2>
+  <image>
+</section>
+
+<div class="light-grey">
+  <div class="row">
+    <div class="small-12 small-centered medium-11 columns end white offset-container">
+      <section class="padding">
+        <div class="row text-center">
+          <div class="small-11 small-centered medium-10 columns end ">
+            <h2 class="pink-type">Bring your mates on the Powershop ride to win</h2>
+            <p>Refer your friends to Powershop through ‘Switch Your Mates’ and you’ll score $50 free power for each one who joins and switches their main home to us. The more mates who sign up, the more free power you can get! Your mates will each score $150 free power too.</p>
+            <p>Terms and conditions apply.</p>
+            <b>How to Switch Your Mates</b>
+            <p>There are two ways you can invite a friend to join Powershop through <a href="https://secure.powershop.co.nz/friends">Switch Your Mates:</a></p>
+            <ol class="list">
+              <li>Invite your friends through Facebook, Twitter, text or email by copying your special referral link and sending or sharing it.</li>
+              <li>Enter their name and email address and we'll send them an invitation.</li>
+            </ol>
+            <p>You can get to Switch Your Mates by clicking the button below, or by opening the menu on the mobile app and tapping ‘Switch Your Mates’.</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="row text-center">
+          <div class="small-11 small-centered medium-11 columns end padding-bottom-last">
+            <%= partial "shared/sym" %>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+</div>
+
+<section class="light-grey">
+  <div class="row padding-bottom-last">
+  <div class="small-12 small-centered medium-12 columns end">
+    <div class="padding">
+      <%= partial "shared/got_questions" %>
+      <%= partial "shared/well_get_in_touch" %>
+      <%= partial "shared/live_help_now" %>
+    </div>
+  </div>
+  </div>
+</section>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    var cookie = readCookie("questionsOpen");
+    if (cookie === "yes") {
+      $('#got-questions').show();
+    }
+    $('#got-questions-link').click(function(){
+      createCookie("questionsOpen", "yes", 1);
+    })
+  });
+</script>

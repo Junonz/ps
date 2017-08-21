@@ -1,0 +1,85 @@
+---
+title: "Credit - Powershop, a better power company"
+section: "residential"
+promotionID: "1106"
+promotionName: "You can't really lose (1106)"
+customClass: "promo-aoa"
+openTermsAndConditionsInNewPage: "yes"
+---
+
+<section class="header white-type text-center">
+  <h2 class="margin-zero">Power you can love</h2>
+</section>
+
+<div class="light-grey">
+  <div class="row">
+    <div class="small-12 small-centered medium-11 columns end white offset-container">
+      <section class="padding">
+        <div class="row text-center">
+          <div class="small-11 small-centered medium-10 columns end ">
+            <h2 class="pink-type">A better power company for Hamilton</h2>
+            <h3>The power company Kiwis love is available in Hamilton, Huntly, Raglan, Ngaruawahia, Te Kauwhata, Temple View, Taupiri, Meremere and Te Kowha</h3>
+            <ul class="list">
+              <li>Buy power online – no more bills in the post.</li>
+              <li>Pay in advance, pay as you go, or set and forget.</li>
+              <li>Track how much you’re using and what it costs - no nasty surprises.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="depoiment">
+        <div class="row text-center">
+          <div class="small-11 small-centered medium-10 columns end ">
+            <h3 class="pink-type margin-zero">"I will never go back to waiting for the dreaded monthly power bill."</h3>
+            <p class="big margin-zero">- Trish, Selwyn</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="row text-center">
+          <div class="small-11 small-centered medium-11 columns end padding-bottom-last">
+            <h3>Switch to a better power deal</h3>
+            <div class="free-power-and-sg">
+              <div class="free-power"><%= partial "assets/images/promos/aoa/150-credit.svg" %></div>
+              <div class="plus-icon"><%= partial "assets/images/promos/aoa/plus.svg" %></div>
+              <div class="sg-badge"><%= partial "assets/images/promos/aoa/sg-badge.svg" %></div>
+            </div>
+            <p>When you switch your main home to Powershop, we’ll give you $150 free power to spread over your first six months!</p>
+            <p>We also guarantee to save you money in your first year compared to your old power company.</p>
+            <p>To get your Guaranteed Savings, you’ll need to send us a recent bill from your old power company. We’ll ask you for this later.</p>
+            <%= partial "shared/mm_mobile_call_us" %>
+            <%= partial "shared/switch_now" %>
+            <%= partial "terms-and-conditions" %>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+</div>
+
+<section class="light-grey">
+  <div class="row padding-bottom-last">
+  <div class="small-12 small-centered medium-12 columns end">
+    <div class="padding">
+      <%= partial "shared/got_questions" %>
+      <%= partial "shared/well_get_in_touch" %>
+      <%= partial "shared/live_help_now" %>
+    </div>
+  </div>
+  </div>
+</section>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    var cookie = readCookie("questionsOpen");
+    if (cookie === "yes") {
+      $('#got-questions').show();
+    }
+    $('#got-questions-link').click(function(){
+      createCookie("questionsOpen", "yes", 1);
+    })
+  });
+</script>

@@ -5,18 +5,17 @@ description: "Choose a power company that lets you take control of your electric
 section: "residential"
 ---
 
-<%= javascript_include_tag  "assets/edge-animation/edge_includes/edge.5.0.1.min", "modules/animations" %>
+<%= javascript_include_tag  "assets/edge-animation/edge_includes/edge.5.0.1.min", "modules/animations", "modules/winter" %>
 
 <section class="you-cant-lose">
   <div class="container">
-    <div class="magenta">
-      <h2 class="main-title">See why you really can't lose with powershop</h2>
-      <%= partial "/assets/images/campaigns/you-cant-lose/green-beard.min.svg" %>
-      <a href="#" class="play" data-reveal-id="overlay-video-main">
-        <%= partial "/assets/images/campaigns/you-cant-lose/play.min.svg" %>
-        <span>1:17</span>
-      </a>
+    <div class="wintercontainer">
+    <div class="winterwinter">
+    <p>Turn those winter chills into winter thrills </br>every Wednesday throughout winter</p>
+    <a href="http://www.powershop.co.nz/winterrific" class="winterbutton">Enter now ></a>
     </div>
+    </div>
+
     <div class="pink white-type">
     <div class="container">
       <h3>Get a better power deal when you switch your main home to Powershop</h3>
@@ -28,18 +27,6 @@ section: "residential"
     </div>
     </div>
   </div>
-
-  <div id="overlay-video-main" class="reveal-modal cant-lose-video" data-reveal>
-    <div class="row">
-      <div class="small-12 small-centered medium-9 columns end">
-        <a class="close-reveal-modal">&#215;</a>
-        <div class="vimeo">
-          <iframe sandbox="allow-same-origin allow-scripts" src="https://player.vimeo.com/video/151571681?title=0&amp;byline=0&amp;portrait=0" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-        </div>
-      </div>
-    </div>
-  </div>
-
 </section>
 
 <section class="home-links light-grey">
@@ -59,7 +46,7 @@ section: "residential"
       <div class="small-12 small-centered columns medium-4 medium-uncentered end">
         <div class="wrapper">
             <div class="svg"><%= partial "/assets/images/campaigns/you-cant-lose/thumbsup.min.svg" %></div>
-            <p class="small"><a href="/our-customers">Averaging over 90% customer satisfaction</a>  since 2009.</p>
+            <p class="small"><a href="/our-customers">Averaging over 90% customer satisfaction</a>  eight years in a row.</p>
         </div>
       </div>
   </div>
@@ -219,7 +206,7 @@ section: "residential"
                     </div>
                     <div class="small-7 columns white-type end" data-equalizer-watch>
                         <h2 class="white-type">Is Powershop in my area?</h2>
-                        <p>We power homes all over New Zealand. You can <a href="#" data-reveal-id="availableAreas">see all of the areas we supply</a>.</p>
+                        <p>We power homes all over New Zealand. So chances are we’re available at your place! If you’d like to double-check, call us on 0800 1000 60.</p>
                     </div>
                 </div>
             </div>
@@ -318,5 +305,4 @@ section: "residential"
 <!-- END Supplied Area Module -->
 
 <%= partial "shared/deals" %>
-
 <%= javascript_include_tag "modules/section_equalizer" %>
