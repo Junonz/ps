@@ -16,7 +16,8 @@
 // Import Layout Styles
 @import "layout/main";
 
-// Import Module Styles
+// Import Module Styles (Organisms)
+// Relatively complex, distinct sections of an interface
 @import "modules/navigation";
 @import "modules/power-you-can-love";
 @import "modules/reveal-modal";
@@ -50,9 +51,6 @@
 // Import Campaign Styles
 @import "modules/campaign-you-cant-lose";
 
-@import "modules/campaign-winter";
-@import "modules/campaign-winter-headline";
-
 // Import Promo Pages Styles
 @import "promos/150credit";
 @import "promos/jm-150credit";
@@ -61,16 +59,8 @@
 @import "promos/power-the-flat";
 @import "promos/for-aoa";
 @import "promos/power-polls-lead";
-@import "promos/north-canterbury";
-@import "promos/south-canterbury";
+@import "promos/greater-canterbury";
 @import "promos/nelson-tasman";
 @import "promos/northpower";
 @import "promos/guaranteed-savings";
 @import "promos/rapa";
-@import "promos/hamilton";
-@import "promos/westcoast";
-@import "promos/eastcoast";
-@import "promos/farnorth";
-@import "promos/bop";
-@import "promos/ga";
-@import "promos/sym"
