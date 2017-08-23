@@ -9,11 +9,13 @@ section: "residential"
 
 <section class="you-cant-lose">
   <div class="container">
-    <div class="wintercontainer">
-    <div class="winterwinter">
-    <p>Turn those winter chills into winter thrills </br>every Wednesday throughout winter</p>
-    <a href="http://www.powershop.co.nz/winterrific" class="winterbutton">Enter now ></a>
-    </div>
+    <div class="magenta">
+      <h2 class="main-title">See why you really can't lose with powershop</h2>
+      <%= partial "/assets/images/campaigns/you-cant-lose/green-beard.min.svg" %>
+      <a href="#" class="play" data-reveal-id="overlay-video-main">
+        <%= partial "/assets/images/campaigns/you-cant-lose/play.min.svg" %>
+        <span>1:17</span>
+      </a>
     </div>
 
     <div class="pink white-type">
@@ -27,6 +29,18 @@ section: "residential"
     </div>
     </div>
   </div>
+
+  <div id="overlay-video-main" class="reveal-modal cant-lose-video" data-reveal>
+    <div class="row">
+      <div class="small-12 small-centered medium-9 columns end">
+        <a class="close-reveal-modal">&#215;</a>
+        <div class="vimeo">
+          <iframe sandbox="allow-same-origin allow-scripts" src="https://player.vimeo.com/video/151571681?title=0&amp;byline=0&amp;portrait=0" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </section>
 
 <section class="home-links light-grey">
