@@ -1,0 +1,132 @@
+  <section class="header-background white-type text-center pink">
+    <div class="row">
+        <div class="small-12 small-centered columns end">
+            <div class="padding">
+                <img src="../assets/images/promos/jm-150credit-sg/150-sg-banner.png" alt="150 Free Power and Savings Guarantee over the year" title="150 Free Power and Savings Guarantee over the year" />
+            </div>
+        </div>
+    </div>
+</section>
+<section class="light-grey mobile-white">
+    <div class="row">
+        <div class="small-12 small-centered columns end">
+            <div class="row text-center padding white promo-body">
+                <div class="small-12 small-centered medium-9 columns end">
+                    <h2 class="medium-pink-type">We’ve got a great power deal we’d like to talk to you about!</h2>
+                    <p class="big">
+                        Switch your main home to Powershop, and we guarantee to save you money over your first year compared to your old power company. We’ll also kick-start your savings with $150 free power, spread over your first six months.
+                    </p>
+                    <p class="big">
+                        Fill in your contact details below and a friendly Powershop rep will be in touch.
+                    </p>
+                </div>
+            </div>
+            <div class="row white promo-body">
+                <div class="small-12 small-centered medium-6 columns end">
+                    <form id="contact" method="post" action="/contact_us/create" name="$150 Credit & SG Offer (922)">
+                        <fieldset>
+                            <div>
+                                <label for="name">First Name <span class="pink-type">*</span>
+                                    <input id="name" name="name" type="text" title="First name" />
+                                </label>
+                                <div id="name-error-text" class="hide">
+                                    <p class="pink-type">Name Error</p>
+                                </div>
+                            </div>
+                            <div>
+                                <label for="last-name">Last name <span class="pink-type">*</span>
+                                    <input id="last-name" name="last-name" type="text" title="Last Name" />
+                                    <div id="last-name-error-text" class="hide">
+                                        <p class="pink-type">Last Name Error</p>
+                                    </div>
+                                </label>
+                            </div>
+                            <div>
+                                <label for="email">Email <span class="pink-type">*</span>
+                                    <input id="email" name="email" type="text" title="Email" size="30">
+                                    <div id="email-error-text" class="hide">
+                                        <p class="pink-type">Email Error</p>
+                                    </div>
+                                </label>
+                            </div>
+                            <div>
+                                <label for="phone-number">Telephone number <span class="pink-type">*</span>
+                                    <input id="phone-number" name="phone-number" type="text" title="Telephone number" />
+                                    <div id="phone-error-text" class="hide">
+                                        <p class="pink-type">Email Error</p>
+                                    </div>
+                                </label>
+                            </div>
+                            <div>
+                                <label for="time-to-call">Best time to call <span class="pink-type">*</span>
+                                    <select id="time-to-call">
+                                        <option>Morning</option>
+                                        <option>Lunch time</option>
+                                        <option>Afternoon</option>
+                                        <option>Evening</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <p class="small"><span class="pink-type">*</span> required information</p>
+                            <input id="comment" name="comment" type="hidden"></input>
+                            <div class="text-center">
+                                <p><a href="javascript:$('form#contact').submit(); void(0);" class="button switch">Send details<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" enable-background="new 0 0 12 12"><path fill="#FFFFFF" d="M3.9 2.9c-.2-.2-.2-.4-.2-.6 0-.3.1-.5.3-.7.2-.2.5-.3.5-.3s3.5 3.6 3.6 3.8c.1.2.2.3.2.7 0 .3-.1.5-.2.7-.1 0-3.5 4.2-3.5 4.2-.1 0-.5-.1-.6-.3-.2-.2-.3-.4-.3-.7 0-.2.1-.4.2-.6.1-.2 2.6-3.4 2.6-3.4s-2.5-2.6-2.6-2.8z"/></svg></a></p>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="header-background light-grey">
+    <div class="row">
+        <div class="small-12 small-centered columns padding end">
+            <h3 class="margin-zero">Ready to switch now?</h3>
+            <form id="promo-form" accept-charset="UTF-8" action="https://secure.powershop.co.nz/signup/personal_details" method="post">
+                <input id="promotion_id" name="promotion_id" type="hidden" value="922" />
+                <input type="checkbox" checked name="accept_ts_and_cs" id="accept_ts_and_cs" style="display: none;" />
+                <p>Head straight to our <a id="sign_up_now">signup page</a>.</p>
+            </form>
+            <p>
+              By going to our offer page we'll assume you agree<br/>
+              with the <a href="#" data-reveal-id="overlay_terms_and_conditions">term and conditions</a> of this promotion.
+            </p>
+        </div>
+    </div>
+    <div id="overlay_terms_and_conditions" class="reveal-modal" data-reveal>
+        <div class="row padding">
+            <div class="small-12 small-centered medium-10 columns">
+                <h2>Terms and Conditions</h2>
+                <a class="close-reveal-modal">&#215;</a>
+                <h4>$150 Credit:</h4>
+                <p>This offer is for new customers only. You will not be eligible to receive this account credit if you’ve received credit for signing up to Powershop within the last 6 months. To receive the $150 worth of free power you need to join Powershop via this page while it is visible. Once you’ve been switched to Powershop, we will credit your account with $50 and you’ll receive a $50 credit on the 20th of each of the following two months. The three account credits worth a total of $150 are only available for use in Powershop for purchasing electricity products and cannot be refunded or redeemed for cash. If you switch away from Powershop within 6 months of becoming a customer then you will not receive any un-credited amounts under this promotion. Your eligibility for this promotion is dependent on you authorising Powershop to conduct a credit check using the details you sign up with and Powershop being satisfied with that credit check.</p>
+                <h4>Savings Guarantee:</h4>
+                <p>Sign up now and if you send us a bill from your old retailer for your main home we’ll guarantee that you’ll save at least $150 with Powershop over the next year. We’ll include any rebates or grants of free power we make to you as part of your guaranteed savings, such as the total $150 account credit. The bill supplied must be from 1 April 2016 or later, and if we ask you must supply an original copy of that bill. We will not guarantee savings on competitors' bills where the rates in those bills are based on real time spot market pricing. Your guaranteed savings is based on the actual cost of your electricity with Powershop over the next year for your main home, when compared to the cost of the same amount of electricity using the rates in the copy of the bill you sent us from your old retailer. This savings guarantee does not apply if within 12 months of becoming a customer: (A) you do not supply a copy of your old retailer’s bill for the property; (B) you switch away from Powershop or move to a new property supplied by Powershop; (C) we reasonably believe after viewing the original bill, or after you refuse to supply us with the original copy of the bill, that the rates in the bill copy are not genuine; (D) we reasonably believe the property in question is not your main home; (E) at the time we calculate your savings guarantee you owe Powershop more than $100 which is at least 60 days overdue (whether on this property or another property). If your metering configuration changes through the year (whether due to a change you request, an error we discover, or for any other reason) then we will use our best endeavours to replicate the cost you would have paid for your power with your old retailer by using a usage-based weighted average of your old retailer’s rates and applying this to your new metering configuration. This offer for guaranteed savings is per residential account and is not available in conjunction with any other promotional offers available through Powershop from time to time. This offer is only available while it is visible on this webpage.</p>
+            </div>
+        </div>
+</section>
+<div class="small-12 medium-7 large-5 medium-offset-1 end columns livehelpnow">
+    <script type="text/javascript">
+    var lhnAccountN = "20299-1";
+    var lhnButtonN = 6312;
+    var lhnInviteEnabled = 1;
+    var lhnWindowN = 0;
+    var lhnDepartmentN = "25032";
+    </script>
+    <a href="http://www.livehelpnow.net/products/live-chat-system" target="_blank" rel="noopener noreferrer" class="lhnHelp" id="lhnHelp">Live Chat Support Software</a>
+    <script src="//www.livehelpnow.net/lhn/widgets/chatbutton/lhnchatbutton-current.min.js" type="text/javascript" id="lhnscript"></script>
+    <script type="text/javascript">
+    function CustomOpenLHNChat() {
+        var wleft = (screen.width - 580 - 32) / 2;
+        var wtop = (screen.height - 420 - 96) / 2;
+        if (bLHNOnline == 0) {
+            location.href = 'http://www.powershop.co.nz/contact-us/';
+        } else {
+            lhnWin = window.open('https://www.livehelpnow.net/lhn/livechatvisitor.aspx?lhnid=20299', 'lhnchat', 'left=' + wleft + ',top=' + wtop + ',width=580,height=435,toolbar=no,location=no,directories=no,status=yes,menubar=no,scrollbars=no,copyhistory=no,resizable=yes');
+        }
+    }
+    </script>
+</div>
+
+<script src="/assets/javascripts/modules/contact_form_for_eg-ee23b988.js"></script>
