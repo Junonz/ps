@@ -12,11 +12,10 @@
       height: auto;
     }
     @media #{$medium-only} {
-      // background-position: center 195px;
       background-position: center 0;
     }
     @media #{$medium-up} {
-      padding: 20px 0
+      padding: 0
     }
     & > div {
       overflow: auto;
@@ -47,9 +46,8 @@
       @media #{$medium-up} {
         width: 460px;
         height: 460px;
-        border-radius: 50%;
         h2 {
-          padding: 17% 17% 0 17%;
+          padding: 10% 10% 0 10%;
           margin-bottom: 15px;
           font-size: $h2-font-size - 0.15;
           font-weight: 100;
@@ -125,7 +123,7 @@
 
   }
 
-  
+
 
   .plans {
     @media #{$small-only} {
@@ -137,7 +135,7 @@
       padding-bottom: $paragraph-margin-bottom*2 !important;
       p.white-type {
         margin-bottom: $paragraph-margin-bottom*2;
-      } 
+      }
     }
     h2.white-type {
       margin-bottom: $paragraph-margin-bottom;
@@ -208,5 +206,5 @@
   //     }
   //   }
   // }
-  
+
 }
