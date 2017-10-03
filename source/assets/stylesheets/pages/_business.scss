@@ -1,6 +1,8 @@
 .business {
 
-  .row.business-banner {
+.fsBody .fsForm{background:none;}
+
+.row.business-banner {
     // background: $purple url("/assets/images/business/havana-geoff.jpg") center 105px no-repeat;
     // background-attachment: fixed;
     //background: $purple url("/assets/images/business/havana-geoff.jpg") center 0 no-repeat;
@@ -12,11 +14,10 @@
       height: auto;
     }
     @media #{$medium-only} {
-      // background-position: center 195px;
       background-position: center 0;
     }
     @media #{$medium-up} {
-      padding: 20px 0
+      padding: 0
     }
     & > div {
       overflow: auto;
@@ -24,6 +25,7 @@
     }
     h5 {
       position: absolute;
+      max-width: 35%;
       z-index: 20;
       font-weight: 300;
       small {
@@ -45,20 +47,16 @@
       background-color: $purple;
       text-align: center;
       @media #{$medium-up} {
-        width: 460px;
-        height: 460px;
-        border-radius: 50%;
+        width: 400px;
+        height: 500px;
         h2 {
-          padding: 17% 17% 0 17%;
+          padding: 10% 10% 0 10%;
           margin-bottom: 15px;
           font-size: $h2-font-size - 0.15;
           font-weight: 100;
         }
         p {
-          padding: 0 10%;
-          &:last-child {
-            padding: 0 15%;
-          }
+          padding: 20px 0 0 0;
         }
       }
       a:hover {
@@ -125,7 +123,7 @@
 
   }
 
-  
+
 
   .plans {
     @media #{$small-only} {
@@ -137,7 +135,7 @@
       padding-bottom: $paragraph-margin-bottom*2 !important;
       p.white-type {
         margin-bottom: $paragraph-margin-bottom*2;
-      } 
+      }
     }
     h2.white-type {
       margin-bottom: $paragraph-margin-bottom;
@@ -208,5 +206,5 @@
   //     }
   //   }
   // }
-  
+
 }
