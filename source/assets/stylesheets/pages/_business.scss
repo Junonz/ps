@@ -13,6 +13,7 @@
       background: $purple;
       height: auto;
     }
+    p{padding: 20px 0 0 0}
     @media #{$medium-only} {
       background-position: center 0;
     }
@@ -135,6 +136,7 @@
       padding-bottom: $paragraph-margin-bottom*2 !important;
       p.white-type {
         margin-bottom: $paragraph-margin-bottom*2;
+        padding: 20px 0 0 0;
       }
     }
     h2.white-type {
