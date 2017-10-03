@@ -1,6 +1,8 @@
 .business {
 
-  .row.business-banner {
+.fsBody .fsForm{background:none;}
+
+.row.business-banner {
     // background: $purple url("/assets/images/business/havana-geoff.jpg") center 105px no-repeat;
     // background-attachment: fixed;
     //background: $purple url("/assets/images/business/havana-geoff.jpg") center 0 no-repeat;
@@ -23,6 +25,7 @@
     }
     h5 {
       position: absolute;
+      max-width: 35%;
       z-index: 20;
       font-weight: 300;
       small {
