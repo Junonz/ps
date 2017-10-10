@@ -16,7 +16,6 @@
 
     #main-oct{
       margin: 0 auto;
-      border:1px solid black
     }
 
     .magenta {
@@ -195,7 +194,7 @@
   @media (min-width: 960px) {
     position: relative;
     overflow: auto;
-    background-color: $magenta;
+    background-color: #491244;
     background-image: url("../images/campaigns/you-cant-lose/txre-2-top.png"), url("../images/campaigns/you-cant-lose/txre-2-btm.png");
     background-position: right top, right bottom;
     background-repeat: repeat-x;
@@ -288,7 +287,7 @@
 }
 
 .cant-lose-video {
-  background-color: transparent;
+    background-color: transparent;
   .close-reveal-modal {
     display: block;
     position: relative;
