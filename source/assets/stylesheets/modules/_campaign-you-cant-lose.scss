@@ -11,9 +11,6 @@
       }
     }
 
-    .you-cant-lose {
-    }
-
     #main-oct{
       margin: 0 auto;
       background-color: #240f23;
@@ -140,7 +137,6 @@
       margin: auto;
     }
     .main-title {
-      background: url(../images/campaigns/xxx.png) left 230% top 0 no-repeat;
       background-size: 115% auto;
       margin: 0 auto;
     }
@@ -218,7 +214,7 @@
       transition: background-position .85s ease;
     }
     .container {
-      max-width: 80em;
+      /* max-width: 80em; */
       margin: 0 auto;
       overflow: auto;
     }
