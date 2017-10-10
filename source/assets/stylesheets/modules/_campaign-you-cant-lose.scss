@@ -16,15 +16,17 @@
 
     #main-oct{
       margin: 0 auto;
+      background-color: #240f23;
+
     }
 
     .magenta {
       height: 300px;
       position: relative;
-      background-image: url(../images/campaigns/you-cant-lose/txre-2-top.png);
       background-repeat: repeat-x;
       background-position: right top;
       background-size: 5px auto;
+      background-color: #240f23;
     }
     .main-title {
       width: 100%;
@@ -32,7 +34,6 @@
       overflow: hidden;
       display: block;
       margin: 0;
-      background: url(../images/campaigns/xxx) left 123% top 0 no-repeat;
       background-size: 150% auto;
       position: relative;
       z-index: 50;
