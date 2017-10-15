@@ -4,28 +4,33 @@
       height: 100%;
       position: absolute;
       top: 0;
-      right: 40px;
+      right: auto;
       display: block;
       .the-guy {
         display: none;
       }
     }
+
+    #main-oct{
+      background-color: #1e051e;
+      margin:0;
+      padding:0;
+    }
+
     .magenta {
       height: 300px;
       position: relative;
-      background-image: url(../images/campaigns/you-cant-lose/txre-2-top.png);
       background-repeat: repeat-x;
       background-position: right top;
       background-size: 5px auto;
+      background-color: #1e051e;
     }
     .main-title {
       width: 100%;
-      height: 300px;
       text-indent: -9000px;
       overflow: hidden;
       display: block;
       margin: 0;
-      background: url(../images/campaigns/you-cant-lose/cant-lose-mobile.png) left 123% top 0 no-repeat;
       background-size: 150% auto;
       position: relative;
       z-index: 50;
@@ -44,8 +49,8 @@
       color: $white;
       font-size: .9rem;
       path:nth-child(1) {
-        opacity: 0.5;
-        fill: $white;
+      opacity: 0.5;
+      fill: $white;
       }
       &:hover {
         text-decoration: none;
@@ -121,7 +126,7 @@
       height: 400px;
     }
     .main-title {
-      background: url(../images/campaigns/you-cant-lose/cant-lose-mobile.png) left 123% top 0 no-repeat;
+      background: url(../images/campaigns/you-cant-lose/.png) left 123% top 0 no-repeat;
       background-size: 150% auto;
     }
   }
@@ -132,8 +137,8 @@
       margin: auto;
     }
     .main-title {
-      background: url(../images/campaigns/you-cant-lose/cant-lose-mobile.png) left 230% top 0 no-repeat;
       background-size: 115% auto;
+      margin: 0 auto;
     }
     .pink h3 {
       padding-right: 80px;
@@ -146,7 +151,7 @@
     }
     .main-title {
       width: 100%;
-      height: 400px;
+      margin: 0 auto;
     }
     .play {
       width: 110px;
@@ -170,24 +175,52 @@
       margin-left: 15px;
     }
   }
-  @media (min-width: 768px) {
-    .green-beard {
-      right: 0;
-      margin: auto;
-      left: 0;
+
+  /* --------------------------------
+  Tablet
+  -------------------------------- */
+
+  @media (min-width: 320px) {
+    #main-oct {
+      height: 280px;
     }
   }
-  @media (min-width: 815px) {
-    .main-title {
-      background-size: 95% auto;
-      background-position: right 489% top 0;
+
+  /* --------------------------------
+  Bigger size mobile
+  -------------------------------- */
+  @media (min-width: 510px){
+    #main-oct {
+      height: 370px;
     }
   }
+
+  @media (min-width: 600px){
+    #main-oct {
+      height: 400px;
+    }
+  }
+
+  /* --------------------------------
+  Smaller Tablet 650
+  -------------------------------- */
+
+  @media (min-width: 650px) {
+    #main-oct {
+      height: 370px;
+    }
+}
+
+@media (min-width: 960px) {
+  #main-oct {
+    height: 370px;
+  }
+}
+
   @media (min-width: 960px) {
     position: relative;
     overflow: auto;
-    background-color: $magenta;
-    background-image: url("../images/campaigns/you-cant-lose/txre-2-top.png"), url("../images/campaigns/you-cant-lose/txre-2-btm.png");
+    background-color: #1e051e;
     background-position: right top, right bottom;
     background-repeat: repeat-x;
     background-size: 5px auto;
@@ -202,14 +235,13 @@
       height: 435px;
       position: absolute;
       z-index: 20;
-      background-image: url(../images/campaigns/you-cant-lose/cant-lose-desktop.png);
       background-repeat: no-repeat;
       background-position: left calc( 50% - 1235px )  bottom -17%;
       background-size: auto 700px;
       top: 0;
       left: 0;
       transition: background-position .85s ease;
-    } 
+    }
     .container {
       max-width: 80em;
       margin: 0 auto;
@@ -218,7 +250,7 @@
     .green-beard {
       width: 475px;
       height: 100%;
-      right: 10px;
+      right: auto;
       margin: 0;
       left: auto;
       .the-guy {
@@ -280,7 +312,7 @@
 }
 
 .cant-lose-video {
-  background-color: transparent;
+    background-color: transparent;
   .close-reveal-modal {
     display: block;
     position: relative;
