@@ -1,0 +1,71 @@
+---
+title: "Tracker - Powershop, a better power company"
+section: "residential"
+promotionID: "1245"
+promotionName: "$150 Credit & SG Offer (1245)"
+customClass: "new-150credit"
+openTermsAndConditionsInNewPage: "yes"
+---
+
+<section class="header-background magenta white-type text-center">
+  <h2>You really can't lose with powershop</h2>
+</section>
+
+<section class="light-grey mobile-white promo-body">
+  <div class="row text-center">
+    <div class="small-12 small-centered medium-11 columns end">
+      <div class="row padding white">
+        <div class="small-12 small-centered medium-11 columns end">
+          <h2 class="pink-type titles">Powershop Lite</h2>
+          <p class="big">
+            You're about to sign up to Powershop Lite, with $150 free power, spread over your first six months.
+            Plus <a href="/guaranteed-savings">Guaranteed Savings</a> in your first year.
+          </p>
+          <hr/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="small-12 small-centered columns end">
+          <div class="row white">
+            <div class="small-12 small-centered medium-10 lend columns">
+              <%= partial "shared/mm_mobile_call_us" %>
+              <div class="padding">
+                <%= partial "shared/sign_up" %>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <%= partial "terms-and-conditions" %>
+</section>
+
+<section class="light-grey">
+  <div class="row padding padding-bottom-last">
+    <%= partial "shared/got_questions" %>
+  </div>
+</section>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    var cookie = readCookie("questionsOpen");
+    if (cookie === "yes") {
+      $('#got-questions').show();
+    }
+    // Define Vimeo player
+    var iframe = $('#intro-video')[0];
+    var player = $f(iframe);
+    $('.vimeo .embed-container').click(function(event) {
+      $(".embed-container").addClass("fade-background");
+      $('.vimeo h3').fadeOut();
+      $('.vimeo .play-btn').fadeOut();
+      $('.vimeo .time').fadeOut();
+      player.api('play');
+    });
+    $('#got-questions-link').click(function(){
+      createCookie("questionsOpen", "yes", 1);
+    })
+  });
+</script>
+<script src="/assets/javascripts/third-party/froogaloop.js" type="text/javascript"></script>
