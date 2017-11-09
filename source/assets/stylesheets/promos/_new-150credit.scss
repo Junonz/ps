@@ -169,7 +169,7 @@
       position: relative;
     }
     .panel {
-      @media #{$small-only} { 
+      @media #{$small-only} {
         margin-top: 20px;
       }
     }
