@@ -8,7 +8,6 @@
 @import "foundation/foundation";
 
 // Import Third Party
-@import "thirdparty/livehelpnow";
 
 // Import Mixins
 @import "base/mixins";
@@ -46,6 +45,8 @@
 @import "pages/who-does-what";
 @import "pages/terms-and-conditions";
 @import "pages/changes";
+@import "pages/classic";
+@import "pages/lite";
 
 // Import Campaign Styles
 @import "modules/campaign-you-cant-lose";
@@ -66,7 +67,6 @@
 @import "promos/guaranteed-savings";
 @import "promos/rapa";
 @import "promos/hamilton";
-@import "promos/westcoast";
 @import "promos/eastcoast";
 @import "promos/farnorth";
 @import "promos/bop";

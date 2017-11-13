@@ -1,0 +1,36 @@
+<style>
+.plan-space{padding:0 52px 30px 52px;}
+.plan-option li{line-height:1.8rem;text-align:left;font-size:1.1rem;}
+.img-space{margin-bottom:32px;}
+</style>
+
+<div class="row plans padding white">
+      <p class="big">Just pick the option that best suits you.</p>
+        <div class="small-12 medium-6 columns padding">
+            <div class="white columns plan-container plan-space">
+                <h2 class="medium-text-center grey-type">Powershop Classic</h2>
+                <img alt="Seasonal Plan" class="img-space" title="Go with the flow" src="/assets/images/classic/classic.png" />
+                <p class="text-left">This option is for those who love a good bargain. It offers the <b>best overall value</b> through the extra savings you can make from buying our regular specials, and packs the full Powershop flavour.</p>
+                <ul class="plan-option">
+                  <li><b>Access to our online shop</b> where you can buy power as you go and save with regular specials.</li>
+                  <li><b>Online tools and our mobile app</b> make it easy to track your usage.</li>
+                  <li><b>Seasonal pricing</b> reduces over spring &amp; summer, then increases slightly over autumn &amp; winter.</li>
+                </ul>
+                <%= partial "shared/sign_up_classic" %>
+            </div>
+        </div>
+
+        <div class="small-12 medium-6 columns padding">
+            <div class="white columns plan-container padding plan-space">
+                <h2 class="medium-text-center grey-type">Powershop Lite</h2>
+                <img alt="Fixed Plan" class="img-space" title="Fix and forget" src="/assets/images/lite/lite.png" />
+                <p class="text-left">This is the option if you like a good deal but prefer a bit more simplicity, and don’t mind missing out on the extra savings you can get from buying our regular specials.</p>
+                <ul class="plan-option">
+                  <li>No access to the shop or our specials, just a <b>simple monthly bill</b> to pay.</li>
+                  <li><b>Online tools and our mobile app</b> make it easy to track your usage.</li>
+                  <li><b>Flat energy pricing</b> that doesn't move with the seasons.</li>
+                </ul>
+                <%= partial "shared/sign_up_light" %>
+            </div>
+        </div>
+  </div>
