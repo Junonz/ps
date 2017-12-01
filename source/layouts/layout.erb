@@ -16,9 +16,7 @@
     </title>
 
 
-    <% if current_page.metadata[:page].try(:[], 'description') %>
         <meta name="description" content="<%= current_page.metadata[:page]['description'] %>">
-    <% end %>
 
 
     <%= stylesheet_link_tag "all" %>
