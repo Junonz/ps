@@ -12,18 +12,20 @@
     }
 
     #main-oct{
-      background-color: #1e051e;
+      background-color: #632976!important;
       margin:0;
       padding:0;
     }
 
     .magenta {
-      height: 300px;
+      min-height: 300px;
       position: relative;
       background-repeat: repeat-x;
       background-position: right top;
       background-size: 5px auto;
-      background-color: #1e051e;
+      background-color: #632976!important;
+      text-align:center;
+      background-image: url(../images/campaigns/you-cant-lose/txre-btm.png);
     }
     .main-title {
       width: 100%;
@@ -191,7 +193,7 @@
   -------------------------------- */
   @media (min-width: 510px){
     #main-oct {
-      height: 370px;
+      height: 350px;
     }
   }
 
@@ -207,7 +209,7 @@
 
   @media (min-width: 650px) {
     #main-oct {
-      height: 370px;
+      height: 350px;
     }
 }
 
@@ -220,7 +222,7 @@
   @media (min-width: 960px) {
     position: relative;
     overflow: auto;
-    background-color: #1e051e;
+    background-color: #70c6e8;
     background-position: right top, right bottom;
     background-repeat: repeat-x;
     background-size: 5px auto;
@@ -243,7 +245,7 @@
       transition: background-position .85s ease;
     }
     .container {
-      max-width: 80em;
+      max-width: 97em;
       margin: 0 auto;
       overflow: auto;
     }
