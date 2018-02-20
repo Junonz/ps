@@ -21,7 +21,7 @@ navigation: "prices"
     <div class="row padding">
     <div class="small-12 small-centered medium-11 large-9 columns text-center end">
       <h2>Sweet! Here’s your estimated price</h2>
-<% consumption_bands(network_area).each.with_index do |consumption_band, i| %>
+      <% consumption_bands(network_area).each.with_index do |consumption_band, i| %>
       <div class="table-rates consumption-band <%= dashify(consumption_band.name) %>" <%= 'style="display:none;"' if i > 0 %>>
         <h3>
           <span id="price-result-network-area"><%= network_area %></span>
