@@ -21,7 +21,6 @@
     #learn-more-btn{z-index:100;text-align:left;margin-left:8%;margin-top:0}
 
     .magenta {
-      height: 300px;
       position: relative;
       background-repeat: repeat-x;
       background-position: right top;
@@ -101,9 +100,15 @@
       }
     }
   }
+
+
+  /* --------------------------------
+  Mobile
+  -------------------------------- */
+
   @media (min-width: 400px) {
     .magenta {
-      height: 280px;
+      height: 240px;
     }
 
     #learn-more-btn{z-index: 100;text-align:left;margin-left:8%;margin-top:0}
@@ -113,11 +118,19 @@
       background-size: 150% auto;
     }
   }
+
+  /* --------------------------------
+  Medium tablet mobile
+  -------------------------------- */
+
   @media (min-width: 510px) {
     .green-beard {
       right: 0;
       left: 0;
       margin: auto;
+    }
+    .magenta {
+      height: 280px;
     }
     .main-title {
       background-size: 115% auto;
@@ -128,17 +141,20 @@
       padding-left: 80px;
     }
   }
+
+  /* --------------------------------
+  Bigger tablet mobile
+  -------------------------------- */
+
   @media (min-width: 650px) {
     .magenta {
-      height: 500px;
+      height: 400px;
     }
     .main-title {
       width: 100%;
       margin: 0 auto;
     }
-    .play {
-      width: 110px;
-    }
+
     .pink  {
       div {
         width: 500px;
