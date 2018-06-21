@@ -157,7 +157,6 @@
     }
     #learn-more-btn{z-index: 100;text-align:left;margin-left:6%;margin-top:0;}
     .button2{z-index: 100;}
-
     .main-title {
       background-size: 115% auto;
       margin: 0 auto;
@@ -208,6 +207,7 @@
   @media (min-width: 320px) {
     #main-oct {height:100px;}
     #learn-more-btn{z-index: 100;text-align:left;margin-left:6%;padding-bottom:20px}
+    .button2{z-index: 100;}
   }
 
   /* --------------------------------
