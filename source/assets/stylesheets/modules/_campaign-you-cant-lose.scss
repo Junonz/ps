@@ -103,6 +103,7 @@
     .button2 {
       color: $blue;
       text-decoration: underline;
+      z-index: 1000;
       padding-top: 10px;
       padding-bottom: 10px;
       margin-bottom: 40px;
@@ -134,7 +135,7 @@
     }
 
     #learn-more-btn{z-index: 100;text-align:left;margin-left:6%;margin-top:0;}
-
+    .button2{z-index: 100;}
     .main-title {
       background: url(../images/campaigns/you-cant-lose/.png) left 123% top 0 no-repeat;
       background-size: 150% auto;
@@ -155,6 +156,7 @@
       height: 280px;
     }
     #learn-more-btn{z-index: 100;text-align:left;margin-left:6%;margin-top:0;}
+    .button2{z-index: 100;}
 
     .main-title {
       background-size: 115% auto;
