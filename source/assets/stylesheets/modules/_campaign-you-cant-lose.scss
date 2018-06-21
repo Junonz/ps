@@ -18,7 +18,7 @@
       padding:0;
     }
 
-    #learn-more-btn{z-index:100;text-align:left;margin-left:8%;margin-top:0;}
+    #learn-more-btn{z-index:100;text-align:left;padding-top:40px}
 
     .magenta {
       position: relative;
@@ -133,7 +133,7 @@
       height: 240px;
     }
 
-    #learn-more-btn{z-index: 100;text-align:left;margin-left:8%;margin-top:0;}
+    #learn-more-btn{z-index: 100;text-align:left;margin-left:6%;margin-top:0;}
 
     .main-title {
       background: url(../images/campaigns/you-cant-lose/.png) left 123% top 0 no-repeat;
@@ -154,6 +154,8 @@
     .magenta {
       height: 280px;
     }
+    #learn-more-btn{z-index: 100;text-align:left;margin-left:6%;margin-top:0;}
+
     .main-title {
       background-size: 115% auto;
       margin: 0 auto;
@@ -202,32 +204,34 @@
   -------------------------------- */
 
   @media (min-width: 320px) {
-    #main-oct {
-      padding: 0;
-    }
+    #main-oct {height:100px;}
+    #learn-more-btn{z-index: 100;text-align:left;margin-left:6%;padding-bottom:20px}
+  }
+
+  /* --------------------------------
+  400/510 mobile
+  -------------------------------- */
+
+  @media (min-width: 400px) {
+    #main-oct {height:140px;}
+    #learn-more-btn{z-index: 100;text-align:left;margin-left:6%;padding-bottom:20px}
   }
 
   /* --------------------------------
   Bigger size mobile
   -------------------------------- */
   @media (min-width: 510px){
-    #main-oct {
-      height: 230px;
-    }
+    #main-oct {height: 200px}
+    #learn-more-btn{z-index: 100;text-align:left;margin-left:6%;padding-bottom:4px;}
   }
 
   @media (min-width: 600px){
-    #main-oct {
-      height: 230px;
-    }
+    #main-oct {height: 200px}
+    #learn-more-btn{z-index: 100;text-align:left;margin-left:6%;padding-bottom:4px;}
   }
 
   /* --------------------------------
   Smaller Tablet 650
-  -------------------------------- */
-
-  /* --------------------------------
-  height updated from 370px for button
   -------------------------------- */
 
   @media (min-width: 650px) {
