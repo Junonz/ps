@@ -18,7 +18,7 @@
       padding:0;
     }
 
-    #learn-more-btn{z-index:100;text-align:left;margin-left:8%;margin-top:0}
+    #learn-more-btn{z-index:100;text-align:left;margin-left:8%;margin-top:0;}
 
     .magenta {
       position: relative;
@@ -99,6 +99,28 @@
         background: url('../images/campaigns/you-cant-lose/arrow.min.svg') 0 0 no-repeat;
       }
     }
+
+    .button2 {
+      color: $blue;
+      text-decoration: underline;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      margin-bottom: 40px;
+      font-size: 1rem;
+      position: relative;
+      padding-right: 45px;
+      &::after {
+        width: 20px;
+        height: 20px;
+        content: " ";
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 2px;
+        bottom: 0;
+        margin: auto;
+      }
+    }
   }
 
 
@@ -111,7 +133,7 @@
       height: 240px;
     }
 
-    #learn-more-btn{z-index: 100;text-align:left;margin-left:8%;margin-top:0}
+    #learn-more-btn{z-index: 100;text-align:left;margin-left:8%;margin-top:0;}
 
     .main-title {
       background: url(../images/campaigns/you-cant-lose/.png) left 123% top 0 no-repeat;
